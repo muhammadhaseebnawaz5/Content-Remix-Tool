@@ -1,0 +1,861 @@
+2026-07-06 09:33:39 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 09:33:39 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-06 09:33:39 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-06 09:33:39 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-06 09:33:39 [INFO] ai_bulk_remix: Platform: win32
+2026-07-06 09:33:39 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 09:33:39 [CRITICAL] ai_bulk_remix: Failed to start application: 'PySide6.QtWidgets.QVBoxLayout' object has no attribute 'setContentsMargin'
+Traceback (most recent call last):
+  File "C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio\main.py", line 63, in main
+    window = MainWindow()
+  File "C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio\src\ui\main_window.py", line 107, in __init__
+    self._setup_ui()
+  File "C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio\src\ui\main_window.py", line 157, in _setup_ui
+    layout.setContentsMargin(20, 16, 20, 16)
+AttributeError: 'PySide6.QtWidgets.QVBoxLayout' object has no attribute 'setContentsMargin'
+2026-07-06 09:51:31 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 09:51:31 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-06 09:51:31 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-06 09:51:31 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-06 09:51:31 [INFO] ai_bulk_remix: Platform: win32
+2026-07-06 09:51:31 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 09:51:39 [INFO] ai_bulk_remix: GPU encoders detected: h264_nvenc, hevc_nvenc, av1_nvenc, h264_qsv, hevc_qsv, h264_amf, hevc_amf
+2026-07-06 09:51:39 [INFO] ai_bulk_remix: MainWindow initialized
+2026-07-06 09:51:39 [INFO] ai_bulk_remix: MainWindow displayed successfully.
+2026-07-06 09:51:39 [INFO] ai_bulk_remix: FFmpeg detected: version 8.1.2-full_build-www.gyan.dev
+2026-07-06 09:52:07 [INFO] ai_bulk_remix: Scanned C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs: 19 video(s) found
+2026-07-06 09:52:45 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 09:52:45 [INFO] ai_bulk_remix: BATCH PROCESSING STARTED
+2026-07-06 09:52:45 [INFO] ai_bulk_remix: Total files: 19
+2026-07-06 09:52:45 [INFO] ai_bulk_remix: Output directory: C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f
+2026-07-06 09:52:45 [INFO] ai_bulk_remix: Workers: 2
+2026-07-06 09:52:45 [INFO] ai_bulk_remix: Encoder: h264_nvenc
+2026-07-06 09:52:45 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 09:52:45 [INFO] ai_bulk_remix: [1/19] START -> Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4
+2026-07-06 09:52:45 [INFO] ai_bulk_remix: [2/19] START -> Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4
+2026-07-06 09:52:48 [INFO] ai_bulk_remix: [2/19] FAIL  Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4
+2026-07-06 09:52:48 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:52:48 [INFO] ai_bulk_remix: [3/19] START -> Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4
+2026-07-06 09:52:48 [INFO] ai_bulk_remix: [1/19] FAIL  Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4
+2026-07-06 09:52:48 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:52:48 [INFO] ai_bulk_remix: [4/19] START -> Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4
+2026-07-06 09:52:52 [INFO] ai_bulk_remix: [3/19] FAIL  Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4
+2026-07-06 09:52:52 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:52:52 [INFO] ai_bulk_remix: [5/19] START -> Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4
+2026-07-06 09:52:52 [INFO] ai_bulk_remix: [4/19] FAIL  Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4
+2026-07-06 09:52:52 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:52:52 [INFO] ai_bulk_remix: [6/19] START -> Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4
+2026-07-06 09:52:55 [INFO] ai_bulk_remix: [5/19] FAIL  Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4
+2026-07-06 09:52:55 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:52:55 [INFO] ai_bulk_remix: [7/19] START -> Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4
+2026-07-06 09:52:55 [INFO] ai_bulk_remix: [6/19] FAIL  Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4
+2026-07-06 09:52:55 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:52:55 [INFO] ai_bulk_remix: [8/19] START -> Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4
+2026-07-06 09:52:59 [INFO] ai_bulk_remix: [7/19] FAIL  Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4
+2026-07-06 09:52:59 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:52:59 [INFO] ai_bulk_remix: [9/19] START -> Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4
+2026-07-06 09:52:59 [INFO] ai_bulk_remix: [8/19] FAIL  Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4
+2026-07-06 09:52:59 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:52:59 [INFO] ai_bulk_remix: [10/19] START -> Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4
+2026-07-06 09:53:02 [INFO] ai_bulk_remix: [10/19] FAIL  Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4
+2026-07-06 09:53:02 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:02 [INFO] ai_bulk_remix: [11/19] START -> Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4
+2026-07-06 09:53:02 [INFO] ai_bulk_remix: [9/19] FAIL  Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4
+2026-07-06 09:53:02 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:02 [INFO] ai_bulk_remix: [12/19] START -> Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4
+2026-07-06 09:53:05 [INFO] ai_bulk_remix: [12/19] FAIL  Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4
+2026-07-06 09:53:05 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:05 [INFO] ai_bulk_remix: [13/19] START -> Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4
+2026-07-06 09:53:05 [INFO] ai_bulk_remix: [11/19] FAIL  Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4
+2026-07-06 09:53:05 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:05 [INFO] ai_bulk_remix: [14/19] START -> Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4
+2026-07-06 09:53:09 [INFO] ai_bulk_remix: [13/19] FAIL  Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4
+2026-07-06 09:53:09 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:09 [INFO] ai_bulk_remix: [15/19] START -> Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4
+2026-07-06 09:53:09 [INFO] ai_bulk_remix: [14/19] FAIL  Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4
+2026-07-06 09:53:09 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:09 [INFO] ai_bulk_remix: [16/19] START -> Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4
+2026-07-06 09:53:12 [INFO] ai_bulk_remix: [16/19] FAIL  Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4
+2026-07-06 09:53:12 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:12 [INFO] ai_bulk_remix: [17/19] START -> Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4
+2026-07-06 09:53:13 [INFO] ai_bulk_remix: [15/19] FAIL  Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4
+2026-07-06 09:53:13 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:13 [INFO] ai_bulk_remix: [18/19] START -> Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4
+2026-07-06 09:53:16 [INFO] ai_bulk_remix: [18/19] FAIL  Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4
+2026-07-06 09:53:16 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:16 [INFO] ai_bulk_remix: [19/19] START -> Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4
+2026-07-06 09:53:16 [INFO] ai_bulk_remix: [17/19] FAIL  Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4
+2026-07-06 09:53:16 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:19 [INFO] ai_bulk_remix: [19/19] FAIL  Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4
+2026-07-06 09:53:19 [INFO] ai_bulk_remix:   ERR: name 'os' is not defined
+2026-07-06 09:53:19 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 09:53:19 [INFO] ai_bulk_remix: BATCH PROCESSING COMPLETED
+2026-07-06 09:53:19 [INFO] ai_bulk_remix: Successful: 0
+2026-07-06 09:53:19 [INFO] ai_bulk_remix: Failed: 19
+2026-07-06 09:53:19 [INFO] ai_bulk_remix: Skipped: 0
+2026-07-06 09:53:19 [INFO] ai_bulk_remix: Total time: 34.3s
+2026-07-06 09:53:19 [INFO] ai_bulk_remix: Failed: Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4, Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4, Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4, Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4, Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4, Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4, Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4, Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4, Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4, Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4, Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4, Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4, Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4, Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4, Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4, Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4, Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4, Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4, Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4
+2026-07-06 09:53:19 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 09:53:34 [INFO] ai_bulk_remix: Application exiting with code 0
+2026-07-06 10:10:36 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:10:36 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-06 10:10:36 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-06 10:10:36 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-06 10:10:36 [INFO] ai_bulk_remix: Platform: win32
+2026-07-06 10:10:36 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:10:41 [INFO] ai_bulk_remix: GPU encoders detected: h264_nvenc, hevc_nvenc, av1_nvenc, h264_qsv, hevc_qsv, h264_amf, hevc_amf
+2026-07-06 10:10:41 [INFO] ai_bulk_remix: MainWindow initialized
+2026-07-06 10:10:41 [INFO] ai_bulk_remix: MainWindow displayed successfully.
+2026-07-06 10:10:41 [INFO] ai_bulk_remix: FFmpeg detected: version 8.1.2-full_build-www.gyan.dev
+2026-07-06 10:10:51 [INFO] ai_bulk_remix: Scanned C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs: 19 video(s) found
+2026-07-06 10:11:38 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:11:38 [INFO] ai_bulk_remix: BATCH PROCESSING STARTED
+2026-07-06 10:11:38 [INFO] ai_bulk_remix: Total files: 19
+2026-07-06 10:11:38 [INFO] ai_bulk_remix: Output directory: C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f
+2026-07-06 10:11:38 [INFO] ai_bulk_remix: Workers: 2
+2026-07-06 10:11:38 [INFO] ai_bulk_remix: Encoder: h264_nvenc
+2026-07-06 10:11:38 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:11:38 [INFO] ai_bulk_remix: [1/19] START -> Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4
+2026-07-06 10:11:38 [INFO] ai_bulk_remix: [2/19] START -> Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4
+2026-07-06 10:11:42 [INFO] ai_bulk_remix: [2/19] FAIL  Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4
+2026-07-06 10:11:42 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4" -vsync vfr -vf format=yuv420p,vflip,eq=brightness=0.195,setpts=1.1111*PTS -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_f...
+2026-07-06 10:11:42 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4" -vsync vfr -vf "format=yuv420p,vflip,eq=brightness=0.195,setpts=1.1111*PTS" -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw_2.mp4"
+Error: GPU encoder failed: Error opening 
+2026-07-06 10:11:42 [INFO] ai_bulk_remix: [3/19] START -> Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4
+2026-07-06 10:11:42 [INFO] ai_bulk_remix: [1/19] FAIL  Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4
+2026-07-06 10:11:42 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4" -vsync vfr -vf format=yuv420p,vflip,eq=brightness=-0.187,setpts=0.9091*PTS -af atempo=1.1000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_...
+2026-07-06 10:11:42 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4" -vsync vfr -vf "format=yuv420p,vflip,eq=brightness=-0.187,setpts=0.9091*PTS" -af atempo=1.1000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi__2.mp4"
+Error: GPU encoder failed: Error opening
+2026-07-06 10:11:42 [INFO] ai_bulk_remix: [4/19] START -> Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4
+2026-07-06 10:11:45 [INFO] ai_bulk_remix: [3/19] FAIL  Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4
+2026-07-06 10:11:45 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4" -vsync vfr -vf format=yuv420p,hflip,eq=brightness=-0.074,setpts=0.9091*PTS -af atempo=1.1000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_...
+2026-07-06 10:11:45 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4" -vsync vfr -vf "format=yuv420p,hflip,eq=brightness=-0.074,setpts=0.9091*PTS" -af atempo=1.1000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr_2.mp4"
+Error: GPU encoder failed: Error opening
+2026-07-06 10:11:45 [INFO] ai_bulk_remix: [5/19] START -> Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4
+2026-07-06 10:11:45 [INFO] ai_bulk_remix: [4/19] FAIL  Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4
+2026-07-06 10:11:45 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4" -vsync vfr -vf format=yuv420p,vflip,eq=brightness=0.143,setpts=1.2500*PTS -af atempo=0.8000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_f...
+2026-07-06 10:11:45 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4" -vsync vfr -vf "format=yuv420p,vflip,eq=brightness=0.143,setpts=1.2500*PTS" -af atempo=0.8000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram_1.mp4"
+Error: GPU encoder failed: Error opening 
+2026-07-06 10:11:45 [INFO] ai_bulk_remix: [6/19] START -> Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4
+2026-07-06 10:11:49 [INFO] ai_bulk_remix: [5/19] FAIL  Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4
+2026-07-06 10:11:49 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4" -vsync vfr -vf format=yuv420p,vflip,eq=brightness=-0.033,setpts=0.8333*PTS -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_...
+2026-07-06 10:11:49 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4" -vsync vfr -vf "format=yuv420p,vflip,eq=brightness=-0.033,setpts=0.8333*PTS" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory__1.mp4"
+Error: GPU encoder failed: Error opening
+2026-07-06 10:11:49 [INFO] ai_bulk_remix: [7/19] START -> Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4
+2026-07-06 10:11:49 [INFO] ai_bulk_remix: [6/19] FAIL  Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4
+2026-07-06 10:11:49 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4" -vsync vfr -vf format=yuv420p,hflip,vflip,eq=brightness=0.127,setpts=1.2500*PTS -af atempo=0.8000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k ...
+2026-07-06 10:11:49 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4" -vsync vfr -vf "format=yuv420p,hflip,vflip,eq=brightness=0.127,setpts=1.2500*PTS" -af atempo=0.8000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo_1.mp4"
+Error: GPU encoder failed: Error op
+2026-07-06 10:11:49 [INFO] ai_bulk_remix: [8/19] START -> Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4
+2026-07-06 10:11:53 [INFO] ai_bulk_remix: [7/19] FAIL  Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4
+2026-07-06 10:11:53 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4" -vsync vfr -vf format=yuv420p,vflip,eq=brightness=-0.067,setpts=1.2500*PTS -af atempo=0.8000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_...
+2026-07-06 10:11:53 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4" -vsync vfr -vf "format=yuv420p,vflip,eq=brightness=-0.067,setpts=1.2500*PTS" -af atempo=0.8000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt_1.mp4"
+Error: GPU encoder failed: Error opening
+2026-07-06 10:11:53 [INFO] ai_bulk_remix: [9/19] START -> Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4
+2026-07-06 10:11:53 [INFO] ai_bulk_remix: [8/19] FAIL  Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4
+2026-07-06 10:11:53 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4" -vsync vfr -vf format=yuv420p,hflip,eq=brightness=-0.039,setpts=1.1111*PTS -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_f...
+2026-07-06 10:11:53 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4" -vsync vfr -vf "format=yuv420p,hflip,eq=brightness=-0.039,setpts=1.1111*PTS" -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T_1.mp4"
+Error: GPU encoder failed: Error opening o
+2026-07-06 10:11:53 [INFO] ai_bulk_remix: [10/19] START -> Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4
+2026-07-06 10:11:57 [INFO] ai_bulk_remix: [9/19] FAIL  Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4
+2026-07-06 10:11:57 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4" -vsync vfr -vf format=yuv420p,hflip,vflip,eq=brightness=0.106,setpts=1.1111*PTS -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k ...
+2026-07-06 10:11:57 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4" -vsync vfr -vf "format=yuv420p,hflip,vflip,eq=brightness=0.106,setpts=1.1111*PTS" -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt_1.mp4"
+Error: GPU encoder failed: Error op
+2026-07-06 10:11:57 [INFO] ai_bulk_remix: [11/19] START -> Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4
+2026-07-06 10:11:57 [INFO] ai_bulk_remix: [10/19] FAIL  Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4
+2026-07-06 10:11:57 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4" -vsync vfr -vf format=yuv420p,hflip,vflip,eq=brightness=-0.073,setpts=0.8333*PTS -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192...
+2026-07-06 10:11:57 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4" -vsync vfr -vf "format=yuv420p,hflip,vflip,eq=brightness=-0.073,setpts=0.8333*PTS" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto_1.mp4"
+Error: GPU encoder failed: Error
+2026-07-06 10:11:57 [INFO] ai_bulk_remix: [12/19] START -> Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4
+2026-07-06 10:12:00 [INFO] ai_bulk_remix: [11/19] FAIL  Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4
+2026-07-06 10:12:00 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4" -vsync vfr -vf format=yuv420p,hflip,eq=brightness=-0.064,setpts=1.1111*PTS -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_...
+2026-07-06 10:12:00 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4" -vsync vfr -vf "format=yuv420p,hflip,eq=brightness=-0.064,setpts=1.1111*PTS" -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD_1.mp4"
+Error: GPU encoder failed: Error opening
+2026-07-06 10:12:00 [INFO] ai_bulk_remix: [13/19] START -> Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4
+2026-07-06 10:12:00 [INFO] ai_bulk_remix: [12/19] FAIL  Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4
+2026-07-06 10:12:00 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4" -vsync vfr -vf format=yuv420p,vflip,eq=brightness=0.066,setpts=1.2500*PTS -af atempo=0.8000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_f...
+2026-07-06 10:12:00 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4" -vsync vfr -vf "format=yuv420p,vflip,eq=brightness=0.066,setpts=1.2500*PTS" -af atempo=0.8000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA_1.mp4"
+Error: GPU encoder failed: Error opening 
+2026-07-06 10:12:00 [INFO] ai_bulk_remix: [14/19] START -> Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4
+2026-07-06 10:12:04 [INFO] ai_bulk_remix: [13/19] FAIL  Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4
+2026-07-06 10:12:04 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4" -vsync vfr -vf format=yuv420p,hflip,vflip,eq=brightness=-0.132,setpts=1.1111*PTS -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k...
+2026-07-06 10:12:04 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4" -vsync vfr -vf "format=yuv420p,hflip,vflip,eq=brightness=-0.132,setpts=1.1111*PTS" -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon_1.mp4"
+Error: GPU encoder failed: Error o
+2026-07-06 10:12:04 [INFO] ai_bulk_remix: [15/19] START -> Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4
+2026-07-06 10:12:04 [INFO] ai_bulk_remix: [14/19] FAIL  Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4
+2026-07-06 10:12:04 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4" -vsync vfr -vf format=yuv420p,vflip,eq=brightness=0.037,setpts=1.1111*PTS -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_f...
+2026-07-06 10:12:04 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4" -vsync vfr -vf "format=yuv420p,vflip,eq=brightness=0.037,setpts=1.1111*PTS" -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra_1.mp4"
+Error: GPU encoder failed: Error opening 
+2026-07-06 10:12:04 [INFO] ai_bulk_remix: [16/19] START -> Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4
+2026-07-06 10:12:07 [INFO] ai_bulk_remix: [15/19] FAIL  Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4
+2026-07-06 10:12:07 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4" -vsync vfr -vf format=yuv420p,hflip,eq=brightness=-0.073,setpts=1.1111*PTS -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pi...
+2026-07-06 10:12:07 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4" -vsync vfr -vf "format=yuv420p,hflip,eq=brightness=-0.073,setpts=1.1111*PTS" -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Instagram_And_Facebook_Love_Story_Part_1_FaceBook_1.mp4"
+Error: GPU encoder failed: Error ope
+2026-07-06 10:12:07 [INFO] ai_bulk_remix: [17/19] START -> Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4
+2026-07-06 10:12:07 [INFO] ai_bulk_remix: [16/19] FAIL  Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4
+2026-07-06 10:12:07 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4" -vsync vfr -vf format=yuv420p,hflip,vflip,eq=brightness=0.157,setpts=1.1111*PTS -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -p...
+2026-07-06 10:12:07 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4" -vsync vfr -vf "format=yuv420p,hflip,vflip,eq=brightness=0.157,setpts=1.1111*PTS" -af atempo=0.9000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Part-1_Aidrama_AiStory_CartoonAi_Trendingnow__1.mp4"
+Error: GPU encoder failed: Error openin
+2026-07-06 10:12:07 [INFO] ai_bulk_remix: [18/19] START -> Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4
+2026-07-06 10:12:11 [INFO] ai_bulk_remix: [17/19] FAIL  Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4
+2026-07-06 10:12:11 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4" -vsync vfr -vf format=yuv420p,hflip,eq=brightness=0.148,setpts=0.8333*PTS -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_f...
+2026-07-06 10:12:11 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4" -vsync vfr -vf "format=yuv420p,hflip,eq=brightness=0.148,setpts=0.8333*PTS" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre_1.mp4"
+Error: GPU encoder failed: Error opening 
+2026-07-06 10:12:11 [INFO] ai_bulk_remix: [19/19] START -> Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4
+2026-07-06 10:12:11 [INFO] ai_bulk_remix: [18/19] FAIL  Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4
+2026-07-06 10:12:11 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4" -vsync vfr -vf format=yuv420p,vflip,eq=brightness=-0.079,setpts=0.9091*PTS -af atempo=1.1000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_...
+2026-07-06 10:12:11 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4" -vsync vfr -vf "format=yuv420p,vflip,eq=brightness=-0.079,setpts=0.9091*PTS" -af atempo=1.1000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre_1.mp4"
+Error: GPU encoder failed: Error opening
+2026-07-06 10:12:15 [INFO] ai_bulk_remix: [19/19] FAIL  Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4
+2026-07-06 10:12:15 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4" -vsync vfr -vf format=yuv420p,hflip,vflip,eq=brightness=-0.091,setpts=0.9091*PTS -af atempo=1.1000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k ...
+2026-07-06 10:12:15 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs\Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4" -vsync vfr -vf "format=yuv420p,hflip,vflip,eq=brightness=-0.091,setpts=0.9091*PTS" -af atempo=1.1000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a aac -b:a 192k -pix_fmt yuv420p -movflags +faststart "C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f\Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre_1.mp4"
+Error: GPU encoder failed: Error ope
+2026-07-06 10:12:15 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:12:15 [INFO] ai_bulk_remix: BATCH PROCESSING COMPLETED
+2026-07-06 10:12:15 [INFO] ai_bulk_remix: Successful: 0
+2026-07-06 10:12:15 [INFO] ai_bulk_remix: Failed: 19
+2026-07-06 10:12:15 [INFO] ai_bulk_remix: Skipped: 0
+2026-07-06 10:12:15 [INFO] ai_bulk_remix: Total time: 36.3s
+2026-07-06 10:12:15 [INFO] ai_bulk_remix: Failed: Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4, Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4, Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4, Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4, Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4, Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4, Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4, Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4, Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4, Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4, Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4, Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4, Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4, Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4, Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4, Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4, Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4, Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4, Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4
+2026-07-06 10:12:15 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:12:48 [INFO] ai_bulk_remix: Application exiting with code 0
+2026-07-06 10:13:53 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:13:53 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-06 10:13:53 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-06 10:13:53 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-06 10:13:53 [INFO] ai_bulk_remix: Platform: win32
+2026-07-06 10:13:53 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:13:58 [INFO] ai_bulk_remix: GPU encoders detected: h264_nvenc, hevc_nvenc, av1_nvenc, h264_qsv, hevc_qsv, h264_amf, hevc_amf
+2026-07-06 10:13:58 [INFO] ai_bulk_remix: MainWindow initialized
+2026-07-06 10:13:58 [INFO] ai_bulk_remix: MainWindow displayed successfully.
+2026-07-06 10:13:58 [INFO] ai_bulk_remix: FFmpeg detected: version 8.1.2-full_build-www.gyan.dev
+2026-07-06 10:14:07 [INFO] ai_bulk_remix: Scanned C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs: 19 video(s) found
+2026-07-06 10:14:34 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:14:34 [INFO] ai_bulk_remix: BATCH PROCESSING STARTED
+2026-07-06 10:14:34 [INFO] ai_bulk_remix: Total files: 19
+2026-07-06 10:14:34 [INFO] ai_bulk_remix: Output directory: C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/f
+2026-07-06 10:14:34 [INFO] ai_bulk_remix: Workers: 2
+2026-07-06 10:14:34 [INFO] ai_bulk_remix: Encoder: h264_nvenc
+2026-07-06 10:14:34 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:14:34 [INFO] ai_bulk_remix: [1/19] START -> Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4
+2026-07-06 10:14:34 [INFO] ai_bulk_remix: [2/19] START -> Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4
+2026-07-06 10:15:33 [INFO] ai_bulk_remix: [1/19] DONE  Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4 (58.9s)
+2026-07-06 10:15:33 [INFO] ai_bulk_remix: [3/19] START -> Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4
+2026-07-06 10:15:41 [INFO] ai_bulk_remix: [2/19] DONE  Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4 (67.0s)
+2026-07-06 10:15:41 [INFO] ai_bulk_remix: [4/19] START -> Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4
+2026-07-06 10:16:28 [INFO] ai_bulk_remix: [4/19] DONE  Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4 (45.7s)
+2026-07-06 10:16:28 [INFO] ai_bulk_remix: [5/19] START -> Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4
+2026-07-06 10:16:35 [INFO] ai_bulk_remix: [3/19] DONE  Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4 (60.9s)
+2026-07-06 10:16:35 [INFO] ai_bulk_remix: [6/19] START -> Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4
+2026-07-06 10:17:35 [INFO] ai_bulk_remix: [6/19] DONE  Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4 (59.5s)
+2026-07-06 10:17:35 [INFO] ai_bulk_remix: [7/19] START -> Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4
+2026-07-06 10:18:05 [INFO] ai_bulk_remix: [5/19] DONE  Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4 (97.1s)
+2026-07-06 10:18:05 [INFO] ai_bulk_remix: [8/19] START -> Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4
+2026-07-06 10:18:32 [INFO] ai_bulk_remix: [7/19] DONE  Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4 (56.8s)
+2026-07-06 10:18:32 [INFO] ai_bulk_remix: [9/19] START -> Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4
+2026-07-06 10:19:14 [INFO] ai_bulk_remix: [8/19] DONE  Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4 (68.3s)
+2026-07-06 10:19:14 [INFO] ai_bulk_remix: [10/19] START -> Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4
+2026-07-06 10:19:17 [INFO] ai_bulk_remix: [9/19] DONE  Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4 (44.5s)
+2026-07-06 10:19:17 [INFO] ai_bulk_remix: [11/19] START -> Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4
+2026-07-06 10:20:13 [INFO] ai_bulk_remix: [11/19] DONE  Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4 (55.4s)
+2026-07-06 10:20:13 [INFO] ai_bulk_remix: [12/19] START -> Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4
+2026-07-06 10:20:18 [INFO] ai_bulk_remix: [10/19] DONE  Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4 (63.3s)
+2026-07-06 10:20:18 [INFO] ai_bulk_remix: [13/19] START -> Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4
+2026-07-06 10:21:09 [INFO] ai_bulk_remix: [13/19] DONE  Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4 (50.0s)
+2026-07-06 10:21:09 [INFO] ai_bulk_remix: [14/19] START -> Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4
+2026-07-06 10:21:10 [INFO] ai_bulk_remix: [12/19] DONE  Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4 (56.9s)
+2026-07-06 10:21:10 [INFO] ai_bulk_remix: [15/19] START -> Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4
+2026-07-06 10:22:00 [INFO] ai_bulk_remix: [15/19] DONE  Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4 (49.5s)
+2026-07-06 10:22:00 [INFO] ai_bulk_remix: [16/19] START -> Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4
+2026-07-06 10:22:53 [INFO] ai_bulk_remix: [14/19] DONE  Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4 (103.4s)
+2026-07-06 10:22:53 [INFO] ai_bulk_remix: [17/19] START -> Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4
+2026-07-06 10:23:46 [INFO] ai_bulk_remix: [16/19] DONE  Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4 (104.8s)
+2026-07-06 10:23:46 [INFO] ai_bulk_remix: [18/19] START -> Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4
+2026-07-06 10:23:46 [INFO] ai_bulk_remix: [17/19] DONE  Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4 (52.3s)
+2026-07-06 10:23:46 [INFO] ai_bulk_remix: [19/19] START -> Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4
+2026-07-06 10:24:38 [INFO] ai_bulk_remix: [18/19] DONE  Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4 (51.6s)
+2026-07-06 10:24:38 [INFO] ai_bulk_remix: [19/19] DONE  Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4 (51.7s)
+2026-07-06 10:24:38 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:24:38 [INFO] ai_bulk_remix: BATCH PROCESSING COMPLETED
+2026-07-06 10:24:38 [INFO] ai_bulk_remix: Successful: 19
+2026-07-06 10:24:38 [INFO] ai_bulk_remix: Failed: 0
+2026-07-06 10:24:38 [INFO] ai_bulk_remix: Skipped: 0
+2026-07-06 10:24:38 [INFO] ai_bulk_remix: Total time: 603.9s
+2026-07-06 10:24:38 [INFO] ai_bulk_remix: ==================================================
+2026-07-06 10:27:10 [INFO] ai_bulk_remix: Application exiting with code 0
+2026-07-07 18:08:26 [INFO] ai_bulk_remix: ==================================================
+2026-07-07 18:08:26 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-07 18:08:26 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-07 18:08:26 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-07 18:08:26 [INFO] ai_bulk_remix: Platform: win32
+2026-07-07 18:08:26 [INFO] ai_bulk_remix: ==================================================
+2026-07-07 18:08:49 [INFO] ai_bulk_remix: GPU encoders detected: h264_nvenc, hevc_nvenc, av1_nvenc, h264_qsv, hevc_qsv, h264_amf, hevc_amf
+2026-07-07 18:08:49 [INFO] ai_bulk_remix: MainWindow initialized
+2026-07-07 18:08:49 [INFO] ai_bulk_remix: MainWindow displayed successfully.
+2026-07-07 18:08:49 [INFO] ai_bulk_remix: FFmpeg detected: version 8.1.2-full_build-www.gyan.dev
+2026-07-07 18:09:16 [INFO] ai_bulk_remix: Scanned C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs: 19 video(s) found
+2026-07-07 18:09:16 [INFO] ai_bulk_remix: Scanned C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs: 19 video(s) found
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: ==================================================
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: BATCH PROCESSING STARTED
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: Total files: 19
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: Output directory: C:/Users/h/Downloads/20260704211210_Ai Fruits Aloo_batchs/New folder
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: Workers: 8
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: Encoder: h264_nvenc
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: ==================================================
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: [1/19] START -> Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: [2/19] START -> Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: [3/19] START -> Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: [4/19] START -> Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: [5/19] START -> Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: [6/19] START -> Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: [7/19] START -> Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4
+2026-07-07 18:10:56 [INFO] ai_bulk_remix: [8/19] START -> Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4
+2026-07-07 18:14:21 [INFO] ai_bulk_remix: [4/19] DONE  Aloo_Ki_Mehnat_Part_2_AiStory_AiDrama_FruitDram.mp4 (204.6s)
+2026-07-07 18:14:24 [INFO] ai_bulk_remix: [9/19] START -> Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4
+2026-07-07 18:15:18 [INFO] ai_bulk_remix: [6/19] DONE  Banana_Cheat_Wife_Part_1_Aidrama_AiStory_Cartoo.mp4 (261.3s)
+2026-07-07 18:15:18 [INFO] ai_bulk_remix: [10/19] START -> Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4
+2026-07-07 18:15:35 [INFO] ai_bulk_remix: [3/19] DONE  Aloo_Ki_Mehnat_Part_1_AlooStory_AiStory_FruitDr.mp4 (277.9s)
+2026-07-07 18:15:35 [INFO] ai_bulk_remix: [11/19] START -> Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4
+2026-07-07 18:15:37 [INFO] ai_bulk_remix: [1/19] DONE  Aloo_And_Gobi_Part_1_Aidrama_AiStory_CartoonAi_.mp4 (280.3s)
+2026-07-07 18:15:37 [INFO] ai_bulk_remix: [12/19] START -> Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4
+2026-07-07 18:16:02 [INFO] ai_bulk_remix: [8/19] DONE  Biwi_k_Chal_part_1_Aidrama_AiStory_CartoonAi_T.mp4 (305.1s)
+2026-07-07 18:16:02 [INFO] ai_bulk_remix: [13/19] START -> Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4
+2026-07-07 18:16:02 [INFO] ai_bulk_remix: [7/19] DONE  Banana_Cheat_Wife_Part_2_Aidrama_CartoonAi_AiSt.mp4 (305.6s)
+2026-07-07 18:16:02 [INFO] ai_bulk_remix: [14/19] START -> Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4
+2026-07-07 18:16:05 [INFO] ai_bulk_remix: [2/19] DONE  Aloo_Cheater_Part_1_Aidrama_AiStory_CartoonNetw.mp4 (308.5s)
+2026-07-07 18:16:05 [INFO] ai_bulk_remix: [15/19] START -> Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4
+2026-07-07 18:18:28 [INFO] ai_bulk_remix: [5/19] DONE  Aloo_Ki_Mihnat_Part_1_AiStory_AiDrama_SadStory_.mp4 (450.9s)
+2026-07-07 18:18:28 [INFO] ai_bulk_remix: [16/19] START -> Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4
+2026-07-07 18:18:29 [INFO] ai_bulk_remix: [9/19] DONE  Chai_And_Pakoora_Love_Story_Part_1_Aidrama_AiSt.mp4 (240.2s)
+2026-07-07 18:18:29 [INFO] ai_bulk_remix: [17/19] START -> Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4
+2026-07-07 18:19:37 [INFO] ai_bulk_remix: [12/19] DONE  Dall_And_Chawal_Part_1_Aidrama_AiStory_CartoonA.mp4 (236.1s)
+2026-07-07 18:19:37 [INFO] ai_bulk_remix: [18/19] START -> Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4
+2026-07-07 18:19:57 [INFO] ai_bulk_remix: [13/19] DONE  Diamond_Daughter_Part_1_Aidrama_AiStory_Cartoon.mp4 (230.4s)
+2026-07-07 18:19:57 [INFO] ai_bulk_remix: [19/19] START -> Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4
+2026-07-07 18:20:17 [INFO] ai_bulk_remix: [11/19] DONE  Chandi_Ki_Mumbati_Part_1_AiStory_AiDrama_FruitD.mp4 (277.3s)
+2026-07-07 18:20:32 [INFO] ai_bulk_remix: [10/19] DONE  Chai_And_Pakoora_Love_Story_Part_2_Aidrama_AiSto.mp4 (309.8s)
+2026-07-07 18:20:34 [INFO] ai_bulk_remix: [15/19] DONE  Instagram_And_Facebook_Love_Story_Part_1_FaceBook.mp4 (264.9s)
+2026-07-07 18:22:28 [INFO] ai_bulk_remix: [17/19] DONE  Sprite_Cheat_Fanta_Part_1_Aidrama_CartoonAi_Tre.mp4 (234.7s)
+2026-07-07 18:22:52 [INFO] ai_bulk_remix: [19/19] DONE  Stroberry_Part_1_Aidrama_AiStory_CartoonAi_Tre.mp4 (170.3s)
+2026-07-07 18:22:53 [INFO] ai_bulk_remix: [18/19] DONE  Sprite_Cheat_Fanta_Part_2_Aidrama_CartoonAi_Tre.mp4 (189.6s)
+2026-07-07 18:22:56 [INFO] ai_bulk_remix: [14/19] DONE  Donkey_Love_Story_Part_1_aidonkey_AiStory_AiDra.mp4 (409.9s)
+2026-07-07 18:23:07 [INFO] ai_bulk_remix: [16/19] DONE  Part-1_Aidrama_AiStory_CartoonAi_Trendingnow_.mp4 (274.1s)
+2026-07-07 18:23:07 [INFO] ai_bulk_remix: ==================================================
+2026-07-07 18:23:07 [INFO] ai_bulk_remix: BATCH PROCESSING COMPLETED
+2026-07-07 18:23:07 [INFO] ai_bulk_remix: Successful: 19
+2026-07-07 18:23:07 [INFO] ai_bulk_remix: Failed: 0
+2026-07-07 18:23:07 [INFO] ai_bulk_remix: Skipped: 0
+2026-07-07 18:23:07 [INFO] ai_bulk_remix: Total time: 730.3s
+2026-07-07 18:23:07 [INFO] ai_bulk_remix: ==================================================
+2026-07-07 18:42:20 [INFO] ai_bulk_remix: Application exiting with code 0
+2026-07-10 20:57:04 [INFO] ai_bulk_remix: ==================================================
+2026-07-10 20:57:04 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-10 20:57:04 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-10 20:57:04 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-10 20:57:04 [INFO] ai_bulk_remix: Platform: win32
+2026-07-10 20:57:04 [INFO] ai_bulk_remix: ==================================================
+2026-07-10 20:57:33 [INFO] ai_bulk_remix: GPU encoders detected: h264_nvenc, hevc_nvenc, av1_nvenc, h264_qsv, hevc_qsv, h264_amf, hevc_amf
+2026-07-10 20:57:33 [INFO] ai_bulk_remix: MainWindow initialized
+2026-07-10 20:57:33 [INFO] ai_bulk_remix: MainWindow displayed successfully.
+2026-07-10 20:57:33 [INFO] ai_bulk_remix: FFmpeg detected: version 8.1.2-full_build-www.gyan.dev
+2026-07-10 21:03:52 [INFO] ai_bulk_remix: Application exiting with code 0
+2026-07-10 21:14:26 [INFO] ai_bulk_remix: ==================================================
+2026-07-10 21:14:26 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-10 21:14:26 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-10 21:14:26 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-10 21:14:26 [INFO] ai_bulk_remix: Platform: win32
+2026-07-10 21:14:26 [INFO] ai_bulk_remix: ==================================================
+2026-07-10 21:14:34 [INFO] ai_bulk_remix: GPU encoders detected: h264_nvenc, hevc_nvenc, av1_nvenc, h264_qsv, hevc_qsv, h264_amf, hevc_amf
+2026-07-10 21:14:34 [INFO] ai_bulk_remix: MainWindow initialized
+2026-07-10 21:14:34 [INFO] ai_bulk_remix: MainWindow displayed successfully.
+2026-07-10 21:14:34 [INFO] ai_bulk_remix: FFmpeg detected: version 8.1.2-full_build-www.gyan.dev
+2026-07-10 21:37:31 [INFO] ai_bulk_remix: Application exiting with code 0
+2026-07-12 09:55:52 [INFO] ai_bulk_remix: ==================================================
+2026-07-12 09:55:52 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-12 09:55:52 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-12 09:55:52 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-12 09:55:52 [INFO] ai_bulk_remix: Platform: win32
+2026-07-12 09:55:52 [INFO] ai_bulk_remix: ==================================================
+2026-07-12 09:56:07 [INFO] ai_bulk_remix: GPU encoders detected: h264_nvenc, hevc_nvenc, av1_nvenc, h264_qsv, hevc_qsv, h264_amf, hevc_amf
+2026-07-12 09:56:07 [INFO] ai_bulk_remix: MainWindow initialized
+2026-07-12 09:56:07 [INFO] ai_bulk_remix: MainWindow displayed successfully.
+2026-07-12 09:56:07 [INFO] ai_bulk_remix: FFmpeg detected: version 8.1.2-full_build-www.gyan.dev
+2026-07-12 09:58:01 [INFO] ai_bulk_remix: Scanned C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba: 20 video(s) found
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: ==================================================
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: BATCH PROCESSING STARTED
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: Total files: 20
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: Output directory: C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba/shuba howa
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: Workers: 5
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: Encoder: h264_nvenc
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: ==================================================
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: [1/20] START -> guanbue_2024-04-30_C6ZSJCGRbO0.mp4
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: [2/20] START -> guanbue_2024-05-01_C6ZY8krxc91.mp4
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: [3/20] START -> guanbue_2024-05-01_C6ZYWNdRbqW.mp4
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: [4/20] START -> guanbue_2024-05-01_C6a6jGwxhuA.mp4
+2026-07-12 09:59:15 [INFO] ai_bulk_remix: [5/20] START -> guanbue_2024-05-01_C6bGO4ORTDQ.mp4
+2026-07-12 10:02:30 [INFO] ai_bulk_remix: [2/20] DONE  guanbue_2024-05-01_C6ZY8krxc91.mp4 (195.3s)
+2026-07-12 10:02:30 [INFO] ai_bulk_remix: [6/20] START -> guanbue_2024-05-01_C6bGzeiRsAz.mp4
+2026-07-12 10:03:00 [INFO] ai_bulk_remix: [3/20] DONE  guanbue_2024-05-01_C6ZYWNdRbqW.mp4 (225.3s)
+2026-07-12 10:03:00 [INFO] ai_bulk_remix: [7/20] START -> guanbue_2024-05-01_C6bT9m-Ri8W.mp4
+2026-07-12 10:03:42 [INFO] ai_bulk_remix: [1/20] DONE  guanbue_2024-04-30_C6ZSJCGRbO0.mp4 (266.9s)
+2026-07-12 10:03:42 [INFO] ai_bulk_remix: [8/20] START -> guanbue_2024-05-01_C6bUkjvxkJs.mp4
+2026-07-12 10:04:09 [INFO] ai_bulk_remix: [5/20] DONE  guanbue_2024-05-01_C6bGO4ORTDQ.mp4 (293.9s)
+2026-07-12 10:04:10 [INFO] ai_bulk_remix: [9/20] START -> guanbue_2024-05-01_C6ba5-IxMMc.mp4
+2026-07-12 10:04:42 [INFO] ai_bulk_remix: [4/20] DONE  guanbue_2024-05-01_C6a6jGwxhuA.mp4 (326.4s)
+2026-07-12 10:04:42 [INFO] ai_bulk_remix: [10/20] START -> guanbue_2024-05-01_C6bbdYHR94l.mp4
+2026-07-12 10:07:20 [INFO] ai_bulk_remix: [6/20] DONE  guanbue_2024-05-01_C6bGzeiRsAz.mp4 (288.0s)
+2026-07-12 10:07:20 [INFO] ai_bulk_remix: [11/20] START -> guanbue_2024-05-01_C6bhwMjRMYG.mp4
+2026-07-12 10:07:52 [INFO] ai_bulk_remix: [7/20] DONE  guanbue_2024-05-01_C6bT9m-Ri8W.mp4 (289.8s)
+2026-07-12 10:07:52 [INFO] ai_bulk_remix: [12/20] START -> guanbue_2024-05-01_C6biTiERQsC.mp4
+2026-07-12 10:08:04 [INFO] ai_bulk_remix: [9/20] DONE  guanbue_2024-05-01_C6ba5-IxMMc.mp4 (231.8s)
+2026-07-12 10:08:04 [INFO] ai_bulk_remix: [13/20] START -> guanbue_2024-05-01_C6bvZ3MxHuq.mp4
+2026-07-12 10:08:40 [INFO] ai_bulk_remix: [10/20] DONE  guanbue_2024-05-01_C6bbdYHR94l.mp4 (237.2s)
+2026-07-12 10:08:40 [INFO] ai_bulk_remix: [14/20] START -> guanbue_2024-05-01_C6bv_lCxVcz.mp4
+2026-07-12 10:09:00 [INFO] ai_bulk_remix: [8/20] DONE  guanbue_2024-05-01_C6bUkjvxkJs.mp4 (316.8s)
+2026-07-12 10:09:00 [INFO] ai_bulk_remix: [15/20] START -> guanbue_2024-05-02_C6dfk-oxV1p.mp4
+2026-07-12 10:11:08 [INFO] ai_bulk_remix: [11/20] DONE  guanbue_2024-05-01_C6bhwMjRMYG.mp4 (225.6s)
+2026-07-12 10:11:08 [INFO] ai_bulk_remix: [16/20] START -> guanbue_2024-05-02_C6dg7Uox6t4.mp4
+2026-07-12 10:12:24 [INFO] ai_bulk_remix: [12/20] DONE  guanbue_2024-05-01_C6biTiERQsC.mp4 (270.0s)
+2026-07-12 10:12:24 [INFO] ai_bulk_remix: [17/20] START -> guanbue_2024-05-02_C6dg_hsRHv.mp4
+2026-07-12 10:13:30 [INFO] ai_bulk_remix: [14/20] DONE  guanbue_2024-05-01_C6bv_lCxVcz.mp4 (288.1s)
+2026-07-12 10:13:30 [INFO] ai_bulk_remix: [18/20] START -> guanbue_2024-05-02_C6dggGXRl2y.mp4
+2026-07-12 10:13:31 [INFO] ai_bulk_remix: [13/20] DONE  guanbue_2024-05-01_C6bvZ3MxHuq.mp4 (325.6s)
+2026-07-12 10:13:31 [INFO] ai_bulk_remix: [19/20] START -> guanbue_2024-05-02_C6dgkbfxcRC.mp4
+2026-07-12 10:14:35 [INFO] ai_bulk_remix: [15/20] DONE  guanbue_2024-05-02_C6dfk-oxV1p.mp4 (332.8s)
+2026-07-12 10:14:35 [INFO] ai_bulk_remix: [20/20] START -> guanbue_2024-05-02_C6dh_kjxVqU.mp4
+2026-07-12 10:16:46 [INFO] ai_bulk_remix: [16/20] DONE  guanbue_2024-05-02_C6dg7Uox6t4.mp4 (335.0s)
+2026-07-12 10:17:59 [INFO] ai_bulk_remix: [18/20] DONE  guanbue_2024-05-02_C6dggGXRl2y.mp4 (267.1s)
+2026-07-12 10:18:16 [INFO] ai_bulk_remix: [17/20] DONE  guanbue_2024-05-02_C6dg_hsRHv.mp4 (349.5s)
+2026-07-12 10:18:26 [INFO] ai_bulk_remix: [19/20] DONE  guanbue_2024-05-02_C6dgkbfxcRC.mp4 (292.4s)
+2026-07-12 10:18:31 [INFO] ai_bulk_remix: [20/20] DONE  guanbue_2024-05-02_C6dh_kjxVqU.mp4 (232.7s)
+2026-07-12 10:18:31 [INFO] ai_bulk_remix: ==================================================
+2026-07-12 10:18:31 [INFO] ai_bulk_remix: BATCH PROCESSING COMPLETED
+2026-07-12 10:18:31 [INFO] ai_bulk_remix: Successful: 20
+2026-07-12 10:18:31 [INFO] ai_bulk_remix: Failed: 0
+2026-07-12 10:18:31 [INFO] ai_bulk_remix: Skipped: 0
+2026-07-12 10:18:31 [INFO] ai_bulk_remix: Total time: 1155.9s
+2026-07-12 10:18:31 [INFO] ai_bulk_remix: ==================================================
+2026-07-12 10:28:12 [INFO] ai_bulk_remix: Application exiting with code 0
+2026-07-12 19:35:43 [INFO] ai_bulk_remix: ==================================================
+2026-07-12 19:35:43 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-12 19:35:43 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-12 19:35:43 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-12 19:35:43 [INFO] ai_bulk_remix: Platform: win32
+2026-07-12 19:35:43 [INFO] ai_bulk_remix: ==================================================
+2026-07-12 19:35:55 [INFO] ai_bulk_remix: GPU encoders detected: h264_nvenc, hevc_nvenc, av1_nvenc, h264_qsv, hevc_qsv, h264_amf, hevc_amf
+2026-07-12 19:35:55 [INFO] ai_bulk_remix: MainWindow initialized
+2026-07-12 19:35:56 [INFO] ai_bulk_remix: MainWindow displayed successfully.
+2026-07-12 19:35:56 [INFO] ai_bulk_remix: FFmpeg detected: version 8.1.2-full_build-www.gyan.dev
+2026-07-12 20:50:50 [INFO] ai_bulk_remix: Application exiting with code 0
+2026-07-14 20:23:39 [INFO] ai_bulk_remix: ==================================================
+2026-07-14 20:23:39 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-14 20:23:39 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-14 20:23:39 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-14 20:23:39 [INFO] ai_bulk_remix: Platform: win32
+2026-07-14 20:23:39 [INFO] ai_bulk_remix: ==================================================
+2026-07-14 20:23:56 [INFO] ai_bulk_remix: GPU encoders detected: h264_nvenc, hevc_nvenc, av1_nvenc, h264_qsv, hevc_qsv, h264_amf, hevc_amf
+2026-07-14 20:23:56 [INFO] ai_bulk_remix: MainWindow initialized
+2026-07-14 20:23:57 [INFO] ai_bulk_remix: MainWindow displayed successfully.
+2026-07-14 20:23:57 [INFO] ai_bulk_remix: FFmpeg detected: version 8.1.2-full_build-www.gyan.dev
+2026-07-14 21:06:32 [INFO] ai_bulk_remix: Scanned C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba: 36 video(s) found
+2026-07-14 21:06:33 [INFO] ai_bulk_remix: Scanned C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba: 36 video(s) found
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: ==================================================
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: BATCH PROCESSING STARTED
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: Total files: 36
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: Output directory: C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba/youtube k lia
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: Workers: 6
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: Encoder: h264_nvenc
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: ==================================================
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: [1/36] START -> guanbue_2024-04-30_C6ZSJCGRbO0.mp4
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: [2/36] START -> guanbue_2024-05-01_C6ZY8krxc91.mp4
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: [3/36] START -> guanbue_2024-05-01_C6ZYWNdRbqW.mp4
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: [4/36] START -> guanbue_2024-05-01_C6a6jGwxhuA.mp4
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: [5/36] START -> guanbue_2024-05-01_C6bT9m-Ri8W.mp4
+2026-07-14 21:12:43 [INFO] ai_bulk_remix: [6/36] START -> guanbue_2024-05-01_C6bUkjvxkJs.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [2/36] FAIL  guanbue_2024-05-01_C6ZY8krxc91.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6ZY8krxc91.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.150,eq=contrast=1.386,eq=saturation=1.288,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6ZY8krxc91.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.150,eq=contrast=1.386,eq=saturation=1.288,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [7/36] START -> guanbue_2024-05-01_C6ba5-IxMMc.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [6/36] FAIL  guanbue_2024-05-01_C6bUkjvxkJs.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bUkjvxkJs.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.031,eq=contrast=0.842,eq=saturation=1.320,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bUkjvxkJs.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.031,eq=contrast=0.842,eq=saturation=1.320,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [5/36] FAIL  guanbue_2024-05-01_C6bT9m-Ri8W.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bT9m-Ri8W.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.109,eq=contrast=1.486,eq=saturation=1.073,setpts=0.8333*PTS,dr...
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bT9m-Ri8W.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.109,eq=contrast=1.486,eq=saturation=1.073,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [8/36] START -> guanbue_2024-05-01_C6bbdYHR94l.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [9/36] START -> guanbue_2024-05-01_C6bhwMjRMYG.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [1/36] FAIL  guanbue_2024-04-30_C6ZSJCGRbO0.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-04-30_C6ZSJCGRbO0.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.183,eq=contrast=1.385,eq=saturation=0.755,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-04-30_C6ZSJCGRbO0.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.183,eq=contrast=1.385,eq=saturation=0.755,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [10/36] START -> guanbue_2024-05-01_C6biTiERQsC.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [4/36] FAIL  guanbue_2024-05-01_C6a6jGwxhuA.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6a6jGwxhuA.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.192,eq=contrast=1.146,eq=saturation=0.740,setpts=0.8333*PTS,dr...
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6a6jGwxhuA.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.192,eq=contrast=1.146,eq=saturation=0.740,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [11/36] START -> guanbue_2024-05-01_C6bvZ3MxHuq.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [3/36] FAIL  guanbue_2024-05-01_C6ZYWNdRbqW.mp4
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6ZYWNdRbqW.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.092,eq=contrast=1.351,eq=saturation=0.643,setpts=0.8333*PTS,dr...
+2026-07-14 21:12:47 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6ZYWNdRbqW.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.092,eq=contrast=1.351,eq=saturation=0.643,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:12:47 [INFO] ai_bulk_remix: [12/36] START -> guanbue_2024-05-01_C6bv_lCxVcz.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [7/36] FAIL  guanbue_2024-05-01_C6ba5-IxMMc.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6ba5-IxMMc.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.034,eq=contrast=1.268,eq=saturation=1.728,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6ba5-IxMMc.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.034,eq=contrast=1.268,eq=saturation=1.728,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [13/36] START -> guanbue_2024-05-02_C6dfk-oxV1p.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [8/36] FAIL  guanbue_2024-05-01_C6bbdYHR94l.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bbdYHR94l.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.051,eq=contrast=0.956,eq=saturation=1.311,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bbdYHR94l.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.051,eq=contrast=0.956,eq=saturation=1.311,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [14/36] START -> guanbue_2024-05-02_C6dg7Uox6t4.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [12/36] FAIL  guanbue_2024-05-01_C6bv_lCxVcz.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bv_lCxVcz.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.159,eq=contrast=1.255,eq=saturation=1.688,setpts=0.8333*PTS,dr...
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bv_lCxVcz.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.159,eq=contrast=1.255,eq=saturation=1.688,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [15/36] START -> guanbue_2024-05-02_C6dg_hsRHv.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [10/36] FAIL  guanbue_2024-05-01_C6biTiERQsC.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6biTiERQsC.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.197,eq=contrast=1.337,eq=saturation=0.654,setpts=0.8333*PTS,dr...
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6biTiERQsC.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.197,eq=contrast=1.337,eq=saturation=0.654,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [16/36] START -> guanbue_2024-05-02_C6dggGXRl2y.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [9/36] FAIL  guanbue_2024-05-01_C6bhwMjRMYG.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bhwMjRMYG.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.051,eq=contrast=1.467,eq=saturation=1.416,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bhwMjRMYG.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.051,eq=contrast=1.467,eq=saturation=1.416,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [17/36] START -> guanbue_2024-05-02_C6dgkbfxcRC.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [11/36] FAIL  guanbue_2024-05-01_C6bvZ3MxHuq.mp4
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bvZ3MxHuq.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.179,eq=contrast=1.499,eq=saturation=1.337,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:50 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-01_C6bvZ3MxHuq.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.179,eq=contrast=1.499,eq=saturation=1.337,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:50 [INFO] ai_bulk_remix: [18/36] START -> guanbue_2024-05-02_C6dh1NJR5Xn.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [13/36] FAIL  guanbue_2024-05-02_C6dfk-oxV1p.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dfk-oxV1p.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.176,eq=contrast=1.316,eq=saturation=0.927,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dfk-oxV1p.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.176,eq=contrast=1.316,eq=saturation=0.927,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [19/36] START -> guanbue_2024-05-02_C6dhKDTxJ0m.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [16/36] FAIL  guanbue_2024-05-02_C6dggGXRl2y.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dggGXRl2y.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.171,eq=contrast=1.084,eq=saturation=0.874,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dggGXRl2y.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.171,eq=contrast=1.084,eq=saturation=0.874,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [20/36] START -> guanbue_2024-05-02_C6dhOYURmx5.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [15/36] FAIL  guanbue_2024-05-02_C6dg_hsRHv.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dg_hsRHv.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.127,eq=contrast=1.118,eq=saturation=0.920,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dg_hsRHv.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.127,eq=contrast=1.118,eq=saturation=0.920,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [21/36] START -> guanbue_2024-05-02_C6dh_kjxVqU.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [17/36] FAIL  guanbue_2024-05-02_C6dgkbfxcRC.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dgkbfxcRC.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.038,eq=contrast=1.341,eq=saturation=1.361,setpts=0.8333*PTS,dr...
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dgkbfxcRC.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.038,eq=contrast=1.341,eq=saturation=1.361,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [14/36] FAIL  guanbue_2024-05-02_C6dg7Uox6t4.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dg7Uox6t4.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.105,eq=contrast=1.419,eq=saturation=1.766,setpts=0.8333*PTS,dr...
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dg7Uox6t4.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.105,eq=contrast=1.419,eq=saturation=1.766,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [22/36] START -> guanbue_2024-05-02_C6diFY3x_rL.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [23/36] START -> guanbue_2024-05-02_C6dihLXR66-.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [18/36] FAIL  guanbue_2024-05-02_C6dh1NJR5Xn.mp4
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dh1NJR5Xn.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.024,eq=contrast=1.422,eq=saturation=1.685,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:54 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dh1NJR5Xn.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.024,eq=contrast=1.422,eq=saturation=1.685,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:54 [INFO] ai_bulk_remix: [24/36] START -> guanbue_2024-05-02_C6dilX7RtJ5.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [19/36] FAIL  guanbue_2024-05-02_C6dhKDTxJ0m.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dhKDTxJ0m.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.006,eq=contrast=1.274,eq=saturation=1.698,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dhKDTxJ0m.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.006,eq=contrast=1.274,eq=saturation=1.698,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [25/36] START -> guanbue_2024-05-03_C6fp-idRj5W.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [20/36] FAIL  guanbue_2024-05-02_C6dhOYURmx5.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dhOYURmx5.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.155,eq=contrast=0.836,eq=saturation=0.570,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dhOYURmx5.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.155,eq=contrast=0.836,eq=saturation=0.570,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [26/36] START -> guanbue_2024-05-03_C6fp1aARWeC.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [23/36] FAIL  guanbue_2024-05-02_C6dihLXR66-.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dihLXR66-.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.066,eq=contrast=1.112,eq=saturation=0.996,setpts=0.8333*PTS,dr...
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dihLXR66-.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.066,eq=contrast=1.112,eq=saturation=0.996,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [27/36] START -> guanbue_2024-05-03_C6fqd8NR1PU.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [24/36] FAIL  guanbue_2024-05-02_C6dilX7RtJ5.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dilX7RtJ5.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.151,eq=contrast=0.937,eq=saturation=0.944,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dilX7RtJ5.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.151,eq=contrast=0.937,eq=saturation=0.944,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [28/36] START -> guanbue_2024-05-03_C6ghAGmxwQ.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [21/36] FAIL  guanbue_2024-05-02_C6dh_kjxVqU.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dh_kjxVqU.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.005,eq=contrast=0.951,eq=saturation=0.810,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6dh_kjxVqU.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.005,eq=contrast=0.951,eq=saturation=0.810,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [29/36] START -> guanbue_2024-05-03_C6ghFz7xMOV.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [22/36] FAIL  guanbue_2024-05-02_C6diFY3x_rL.mp4
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6diFY3x_rL.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.142,eq=contrast=1.372,eq=saturation=1.709,setpts=0.8333*PTS,dra...
+2026-07-14 21:12:58 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-02_C6diFY3x_rL.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.142,eq=contrast=1.372,eq=saturation=1.709,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:12:58 [INFO] ai_bulk_remix: [30/36] START -> guanbue_2024-05-03_C6gy0cDRM3t.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [25/36] FAIL  guanbue_2024-05-03_C6fp-idRj5W.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6fp-idRj5W.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.016,eq=contrast=1.273,eq=saturation=1.021,setpts=0.8333*PTS,dr...
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6fp-idRj5W.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.016,eq=contrast=1.273,eq=saturation=1.021,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [31/36] START -> guanbue_2024-05-03_C6gys9-RNyy.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [26/36] FAIL  guanbue_2024-05-03_C6fp1aARWeC.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6fp1aARWeC.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.055,eq=contrast=1.307,eq=saturation=0.515,setpts=0.8333*PTS,dra...
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6fp1aARWeC.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.055,eq=contrast=1.307,eq=saturation=0.515,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [32/36] START -> guanbue_2024-05-03_C6gz79jxWJJ.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [27/36] FAIL  guanbue_2024-05-03_C6fqd8NR1PU.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6fqd8NR1PU.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.043,eq=contrast=0.826,eq=saturation=1.564,setpts=0.8333*PTS,dra...
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6fqd8NR1PU.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.043,eq=contrast=0.826,eq=saturation=1.564,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [33/36] START -> guanbue_2024-05-04_C6jF2ggRZBM.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [30/36] FAIL  guanbue_2024-05-03_C6gy0cDRM3t.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6gy0cDRM3t.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.078,eq=contrast=1.406,eq=saturation=1.442,setpts=0.8333*PTS,dra...
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6gy0cDRM3t.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.078,eq=contrast=1.406,eq=saturation=1.442,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [28/36] FAIL  guanbue_2024-05-03_C6ghAGmxwQ.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6ghAGmxwQ.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.119,eq=contrast=0.941,eq=saturation=1.524,setpts=0.8333*PTS,dra...
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6ghAGmxwQ.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.119,eq=contrast=0.941,eq=saturation=1.524,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [34/36] START -> guanbue_2024-05-04_C6jGFyxR9IB.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [35/36] START -> guanbue_2024-05-04_C6jGKEaxdT7.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [29/36] FAIL  guanbue_2024-05-03_C6ghFz7xMOV.mp4
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6ghFz7xMOV.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.009,eq=contrast=0.818,eq=saturation=0.704,setpts=0.8333*PTS,dra...
+2026-07-14 21:13:01 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6ghFz7xMOV.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.009,eq=contrast=0.818,eq=saturation=0.704,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:13:01 [INFO] ai_bulk_remix: [36/36] START -> guanbue_2024-05-04_C6jd0O3xXan.mp4
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: [31/36] FAIL  guanbue_2024-05-03_C6gys9-RNyy.mp4
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6gys9-RNyy.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.080,eq=contrast=0.886,eq=saturation=1.536,setpts=0.8333*PTS,dr...
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6gys9-RNyy.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.080,eq=contrast=0.886,eq=saturation=1.536,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: [32/36] FAIL  guanbue_2024-05-03_C6gz79jxWJJ.mp4
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6gz79jxWJJ.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.109,eq=contrast=1.407,eq=saturation=1.340,setpts=0.8333*PTS,dra...
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-03_C6gz79jxWJJ.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=0.109,eq=contrast=1.407,eq=saturation=1.340,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a 
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: [33/36] FAIL  guanbue_2024-05-04_C6jF2ggRZBM.mp4
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-04_C6jF2ggRZBM.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.060,eq=contrast=1.479,eq=saturation=1.456,setpts=0.8333*PTS,dr...
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-04_C6jF2ggRZBM.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.060,eq=contrast=1.479,eq=saturation=1.456,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: [35/36] FAIL  guanbue_2024-05-04_C6jGKEaxdT7.mp4
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-04_C6jGKEaxdT7.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.163,eq=contrast=0.954,eq=saturation=0.789,setpts=0.8333*PTS,dr...
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-04_C6jGKEaxdT7.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.163,eq=contrast=0.954,eq=saturation=0.789,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: [34/36] FAIL  guanbue_2024-05-04_C6jGFyxR9IB.mp4
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-04_C6jGFyxR9IB.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.044,eq=contrast=0.882,eq=saturation=1.409,setpts=0.8333*PTS,dr...
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-04_C6jGFyxR9IB.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.044,eq=contrast=0.882,eq=saturation=1.409,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: [36/36] FAIL  guanbue_2024-05-04_C6jd0O3xXan.mp4
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   CMD: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-04_C6jd0O3xXan.mp4 -vf format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.161,eq=contrast=0.951,eq=saturation=1.528,setpts=0.8333*PTS,dr...
+2026-07-14 21:13:05 [INFO] ai_bulk_remix:   ERR: Command: ffmpeg -y -i C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba\guanbue_2024-05-04_C6jd0O3xXan.mp4 -vf "format=yuv420p,hflip,colorbalance=rm=0.08:gm=0.04:bm=-0.08:rh=0.08:gh=0.04:bh=-0.08,eq=contrast=0.85,eq=brightness=-0.161,eq=contrast=0.951,eq=saturation=1.528,setpts=0.8333*PTS,drawtext=text='Slapstick':fontfile='C:/Windows/Fonts/arial.ttf':fontcolor=#ff5c8d@'0.70':fontsize=12:x=10:y=10" -af atempo=1.2000 -c:v h264_nvenc -preset fast -rc vbr -b:v 0 -b:v 5M -r 30 -c:a
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: ==================================================
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: BATCH PROCESSING COMPLETED
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: Successful: 0
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: Failed: 36
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: Skipped: 0
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: Total time: 22.3s
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: Failed: guanbue_2024-04-30_C6ZSJCGRbO0.mp4, guanbue_2024-05-01_C6ZY8krxc91.mp4, guanbue_2024-05-01_C6ZYWNdRbqW.mp4, guanbue_2024-05-01_C6a6jGwxhuA.mp4, guanbue_2024-05-01_C6bT9m-Ri8W.mp4, guanbue_2024-05-01_C6bUkjvxkJs.mp4, guanbue_2024-05-01_C6ba5-IxMMc.mp4, guanbue_2024-05-01_C6bbdYHR94l.mp4, guanbue_2024-05-01_C6bhwMjRMYG.mp4, guanbue_2024-05-01_C6biTiERQsC.mp4, guanbue_2024-05-01_C6bvZ3MxHuq.mp4, guanbue_2024-05-01_C6bv_lCxVcz.mp4, guanbue_2024-05-02_C6dfk-oxV1p.mp4, guanbue_2024-05-02_C6dg7Uox6t4.mp4, guanbue_2024-05-02_C6dg_hsRHv.mp4, guanbue_2024-05-02_C6dggGXRl2y.mp4, guanbue_2024-05-02_C6dgkbfxcRC.mp4, guanbue_2024-05-02_C6dh1NJR5Xn.mp4, guanbue_2024-05-02_C6dhKDTxJ0m.mp4, guanbue_2024-05-02_C6dhOYURmx5.mp4, guanbue_2024-05-02_C6dh_kjxVqU.mp4, guanbue_2024-05-02_C6diFY3x_rL.mp4, guanbue_2024-05-02_C6dihLXR66-.mp4, guanbue_2024-05-02_C6dilX7RtJ5.mp4, guanbue_2024-05-03_C6fp-idRj5W.mp4, guanbue_2024-05-03_C6fp1aARWeC.mp4, guanbue_2024-05-03_C6fqd8NR1PU.mp4, guanbue_2024-05-03_C6ghAGmxwQ.mp4, guanbue_2024-05-03_C6ghFz7xMOV.mp4, guanbue_2024-05-03_C6gy0cDRM3t.mp4, guanbue_2024-05-03_C6gys9-RNyy.mp4, guanbue_2024-05-03_C6gz79jxWJJ.mp4, guanbue_2024-05-04_C6jF2ggRZBM.mp4, guanbue_2024-05-04_C6jGFyxR9IB.mp4, guanbue_2024-05-04_C6jGKEaxdT7.mp4, guanbue_2024-05-04_C6jd0O3xXan.mp4
+2026-07-14 21:13:05 [INFO] ai_bulk_remix: ==================================================
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: ==================================================
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: BATCH PROCESSING STARTED
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: Total files: 36
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: Output directory: C:/Users/h/Videos/guanbue_20260604_110310_reel_part03/guanbue/shuba/youtube k lia
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: Workers: 5
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: Encoder: h264_nvenc
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: ==================================================
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: [1/36] START -> guanbue_2024-04-30_C6ZSJCGRbO0.mp4
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: [2/36] START -> guanbue_2024-05-01_C6ZY8krxc91.mp4
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: [3/36] START -> guanbue_2024-05-01_C6ZYWNdRbqW.mp4
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: [4/36] START -> guanbue_2024-05-01_C6a6jGwxhuA.mp4
+2026-07-14 21:19:38 [INFO] ai_bulk_remix: [5/36] START -> guanbue_2024-05-01_C6bT9m-Ri8W.mp4
+2026-07-14 21:22:18 [INFO] ai_bulk_remix: [2/36] DONE  guanbue_2024-05-01_C6ZY8krxc91.mp4 (159.8s)
+2026-07-14 21:22:18 [INFO] ai_bulk_remix: [6/36] START -> guanbue_2024-05-01_C6bUkjvxkJs.mp4
+2026-07-14 21:22:32 [INFO] ai_bulk_remix: [3/36] DONE  guanbue_2024-05-01_C6ZYWNdRbqW.mp4 (174.3s)
+2026-07-14 21:22:32 [INFO] ai_bulk_remix: [7/36] START -> guanbue_2024-05-01_C6ba5-IxMMc.mp4
+2026-07-14 21:23:43 [INFO] ai_bulk_remix: [1/36] DONE  guanbue_2024-04-30_C6ZSJCGRbO0.mp4 (244.7s)
+2026-07-14 21:23:43 [INFO] ai_bulk_remix: [8/36] START -> guanbue_2024-05-01_C6bbdYHR94l.mp4
+2026-07-14 21:24:24 [INFO] ai_bulk_remix: [5/36] DONE  guanbue_2024-05-01_C6bT9m-Ri8W.mp4 (285.6s)
+2026-07-14 21:24:24 [INFO] ai_bulk_remix: [9/36] START -> guanbue_2024-05-01_C6bhwMjRMYG.mp4
+2026-07-14 21:24:29 [INFO] ai_bulk_remix: [4/36] DONE  guanbue_2024-05-01_C6a6jGwxhuA.mp4 (290.8s)
+2026-07-14 21:24:29 [INFO] ai_bulk_remix: [10/36] START -> guanbue_2024-05-01_C6biTiERQsC.mp4
+2026-07-14 21:25:33 [INFO] ai_bulk_remix: [7/36] DONE  guanbue_2024-05-01_C6ba5-IxMMc.mp4 (174.3s)
+2026-07-14 21:25:33 [INFO] ai_bulk_remix: [11/36] START -> guanbue_2024-05-01_C6bvZ3MxHuq.mp4
+2026-07-14 21:27:42 [INFO] ai_bulk_remix: [6/36] DONE  guanbue_2024-05-01_C6bUkjvxkJs.mp4 (318.3s)
+2026-07-14 21:27:42 [INFO] ai_bulk_remix: [12/36] START -> guanbue_2024-05-01_C6bv_lCxVcz.mp4
+2026-07-14 21:28:30 [INFO] ai_bulk_remix: [8/36] DONE  guanbue_2024-05-01_C6bbdYHR94l.mp4 (281.0s)
+2026-07-14 21:28:30 [INFO] ai_bulk_remix: [13/36] START -> guanbue_2024-05-02_C6dfk-oxV1p.mp4
+2026-07-14 21:29:14 [INFO] ai_bulk_remix: [9/36] DONE  guanbue_2024-05-01_C6bhwMjRMYG.mp4 (283.6s)
+2026-07-14 21:29:14 [INFO] ai_bulk_remix: [14/36] START -> guanbue_2024-05-02_C6dg7Uox6t4.mp4
+2026-07-14 21:29:36 [INFO] ai_bulk_remix: [10/36] DONE  guanbue_2024-05-01_C6biTiERQsC.mp4 (300.8s)
+2026-07-14 21:29:36 [INFO] ai_bulk_remix: [15/36] START -> guanbue_2024-05-02_C6dg_hsRHv.mp4
+2026-07-14 21:30:32 [INFO] ai_bulk_remix: [11/36] DONE  guanbue_2024-05-01_C6bvZ3MxHuq.mp4 (297.8s)
+2026-07-14 21:30:32 [INFO] ai_bulk_remix: [16/36] START -> guanbue_2024-05-02_C6dggGXRl2y.mp4
+2026-07-14 21:31:57 [INFO] ai_bulk_remix: [12/36] DONE  guanbue_2024-05-01_C6bv_lCxVcz.mp4 (252.9s)
+2026-07-14 21:31:57 [INFO] ai_bulk_remix: [17/36] START -> guanbue_2024-05-02_C6dgkbfxcRC.mp4
+2026-07-14 21:33:51 [INFO] ai_bulk_remix: [13/36] DONE  guanbue_2024-05-02_C6dfk-oxV1p.mp4 (319.0s)
+2026-07-14 21:33:51 [INFO] ai_bulk_remix: [18/36] START -> guanbue_2024-05-02_C6dh1NJR5Xn.mp4
+2026-07-14 21:34:55 [INFO] ai_bulk_remix: [14/36] DONE  guanbue_2024-05-02_C6dg7Uox6t4.mp4 (338.4s)
+2026-07-14 21:34:55 [INFO] ai_bulk_remix: [19/36] START -> guanbue_2024-05-02_C6dhKDTxJ0m.mp4
+2026-07-14 21:35:10 [INFO] ai_bulk_remix: [16/36] DONE  guanbue_2024-05-02_C6dggGXRl2y.mp4 (275.9s)
+2026-07-14 21:35:10 [INFO] ai_bulk_remix: [20/36] START -> guanbue_2024-05-02_C6dhOYURmx5.mp4
+2026-07-14 21:35:20 [INFO] ai_bulk_remix: [15/36] DONE  guanbue_2024-05-02_C6dg_hsRHv.mp4 (341.7s)
+2026-07-14 21:35:20 [INFO] ai_bulk_remix: [21/36] START -> guanbue_2024-05-02_C6dh_kjxVqU.mp4
+2026-07-14 21:36:02 [INFO] ai_bulk_remix: [17/36] DONE  guanbue_2024-05-02_C6dgkbfxcRC.mp4 (239.0s)
+2026-07-14 21:36:02 [INFO] ai_bulk_remix: [22/36] START -> guanbue_2024-05-02_C6diFY3x_rL.mp4
+2026-07-15 08:12:50 [INFO] ai_bulk_remix: [19/36] DONE  guanbue_2024-05-02_C6dhKDTxJ0m.mp4 (38270.2s)
+2026-07-15 08:12:50 [INFO] ai_bulk_remix: [23/36] START -> guanbue_2024-05-02_C6dihLXR66-.mp4
+2026-07-15 08:13:43 [INFO] ai_bulk_remix: [18/36] DONE  guanbue_2024-05-02_C6dh1NJR5Xn.mp4 (38385.7s)
+2026-07-15 08:13:43 [INFO] ai_bulk_remix: [24/36] START -> guanbue_2024-05-02_C6dilX7RtJ5.mp4
+2026-07-15 08:15:48 [INFO] ai_bulk_remix: [21/36] DONE  guanbue_2024-05-02_C6dh_kjxVqU.mp4 (38422.3s)
+2026-07-15 08:15:48 [INFO] ai_bulk_remix: [25/36] START -> guanbue_2024-05-03_C6fp-idRj5W.mp4
+2026-07-15 08:16:32 [INFO] ai_bulk_remix: [22/36] DONE  guanbue_2024-05-02_C6diFY3x_rL.mp4 (38425.3s)
+2026-07-15 08:16:32 [INFO] ai_bulk_remix: [26/36] START -> guanbue_2024-05-03_C6fp1aARWeC.mp4
+2026-07-15 08:16:49 [INFO] ai_bulk_remix: [20/36] DONE  guanbue_2024-05-02_C6dhOYURmx5.mp4 (38491.6s)
+2026-07-15 08:16:49 [INFO] ai_bulk_remix: [27/36] START -> guanbue_2024-05-03_C6fqd8NR1PU.mp4
+2026-07-15 08:18:43 [INFO] ai_bulk_remix: [23/36] DONE  guanbue_2024-05-02_C6dihLXR66-.mp4 (350.1s)
+2026-07-15 08:18:43 [INFO] ai_bulk_remix: [28/36] START -> guanbue_2024-05-03_C6ghAGmxwQ.mp4
+2026-07-15 08:18:53 [INFO] ai_bulk_remix: [24/36] DONE  guanbue_2024-05-02_C6dilX7RtJ5.mp4 (306.6s)
+2026-07-15 08:18:53 [INFO] ai_bulk_remix: [29/36] START -> guanbue_2024-05-03_C6ghFz7xMOV.mp4
+2026-07-15 08:21:28 [INFO] ai_bulk_remix: [27/36] DONE  guanbue_2024-05-03_C6fqd8NR1PU.mp4 (276.3s)
+2026-07-15 08:21:28 [INFO] ai_bulk_remix: [30/36] START -> guanbue_2024-05-03_C6gy0cDRM3t.mp4
+2026-07-15 08:21:41 [INFO] ai_bulk_remix: [25/36] DONE  guanbue_2024-05-03_C6fp-idRj5W.mp4 (350.9s)
+2026-07-15 08:21:41 [INFO] ai_bulk_remix: [31/36] START -> guanbue_2024-05-03_C6gys9-RNyy.mp4
+2026-07-15 08:22:35 [INFO] ai_bulk_remix: [26/36] DONE  guanbue_2024-05-03_C6fp1aARWeC.mp4 (361.0s)
+2026-07-15 08:22:35 [INFO] ai_bulk_remix: [32/36] START -> guanbue_2024-05-03_C6gz79jxWJJ.mp4
+2026-07-15 08:24:28 [INFO] ai_bulk_remix: [28/36] DONE  guanbue_2024-05-03_C6ghAGmxwQ.mp4 (342.6s)
+2026-07-15 08:24:29 [INFO] ai_bulk_remix: [33/36] START -> guanbue_2024-05-04_C6jF2ggRZBM.mp4
+2026-07-15 08:24:34 [INFO] ai_bulk_remix: [29/36] DONE  guanbue_2024-05-03_C6ghFz7xMOV.mp4 (339.3s)
+2026-07-15 08:24:34 [INFO] ai_bulk_remix: [34/36] START -> guanbue_2024-05-04_C6jGFyxR9IB.mp4
+2026-07-15 08:26:12 [INFO] ai_bulk_remix: [32/36] DONE  guanbue_2024-05-03_C6gz79jxWJJ.mp4 (215.2s)
+2026-07-15 08:26:12 [INFO] ai_bulk_remix: [35/36] START -> guanbue_2024-05-04_C6jGKEaxdT7.mp4
+2026-07-15 08:26:50 [INFO] ai_bulk_remix: [30/36] DONE  guanbue_2024-05-03_C6gy0cDRM3t.mp4 (320.0s)
+2026-07-15 08:26:50 [INFO] ai_bulk_remix: [36/36] START -> guanbue_2024-05-04_C6jd0O3xXan.mp4
+2026-07-15 08:27:06 [INFO] ai_bulk_remix: [31/36] DONE  guanbue_2024-05-03_C6gys9-RNyy.mp4 (322.9s)
+2026-07-15 08:28:08 [INFO] ai_bulk_remix: [33/36] DONE  guanbue_2024-05-04_C6jF2ggRZBM.mp4 (217.8s)
+2026-07-15 08:28:58 [INFO] ai_bulk_remix: [34/36] DONE  guanbue_2024-05-04_C6jGFyxR9IB.mp4 (261.7s)
+2026-07-15 08:29:29 [INFO] ai_bulk_remix: [36/36] DONE  guanbue_2024-05-04_C6jd0O3xXan.mp4 (156.5s)
+2026-07-15 08:29:36 [INFO] ai_bulk_remix: [35/36] DONE  guanbue_2024-05-04_C6jGKEaxdT7.mp4 (201.5s)
+2026-07-15 08:29:36 [INFO] ai_bulk_remix: ==================================================
+2026-07-15 08:29:36 [INFO] ai_bulk_remix: BATCH PROCESSING COMPLETED
+2026-07-15 08:29:36 [INFO] ai_bulk_remix: Successful: 36
+2026-07-15 08:29:36 [INFO] ai_bulk_remix: Failed: 0
+2026-07-15 08:29:36 [INFO] ai_bulk_remix: Skipped: 0
+2026-07-15 08:29:36 [INFO] ai_bulk_remix: Total time: 40198.3s
+2026-07-15 08:29:36 [INFO] ai_bulk_remix: ==================================================
+2026-07-15 08:39:43 [INFO] ai_bulk_remix: Application exiting with code 0
+2026-07-19 12:18:12 [INFO] ai_bulk_remix: ==================================================
+2026-07-19 12:18:12 [INFO] ai_bulk_remix: AI Bulk Remix Studio v1.0.0 starting...
+2026-07-19 12:18:12 [INFO] ai_bulk_remix: Base directory: C:\Users\h\Downloads\workspace-019f358a-7782-773b-a288-b83757fb6bfc\ai-bulk-remix-studio
+2026-07-19 12:18:12 [INFO] ai_bulk_remix: Python: 3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]
+2026-07-19 12:18:12 [INFO] ai_bulk_remix: Platform: win32
+2026-07-19 12:18:12 [INFO] ai_bulk_remix: ==================================================
+2026-07-19 12:18:46 [INFO] ai_bulk_remix: GPU encoders detected: h264_nvenc, hevc_nvenc, av1_nvenc, h264_qsv, hevc_qsv, h264_amf, hevc_amf
+2026-07-19 12:18:46 [INFO] ai_bulk_remix: MainWindow initialized
+2026-07-19 12:18:46 [INFO] ai_bulk_remix: MainWindow displayed successfully.
+2026-07-19 12:18:46 [INFO] ai_bulk_remix: FFmpeg detected: version 8.1.2-full_build-www.gyan.dev
+2026-07-19 12:19:37 [INFO] ai_bulk_remix: Scanned C:/Users/h/Videos/know_healthy: 64 video(s) found
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: ==================================================
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: BATCH PROCESSING STARTED
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: Total files: 64
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: Output directory: C:/Users/h/Videos/know_healthy/New folder
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: Workers: 5
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: Encoder: h264_nvenc
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: ==================================================
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: [1/64] START -> DZ-b5I4s4Mn.mp4
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: [2/64] START -> DZ45fSiOoGM.mp4
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: [3/64] START -> DZ7mt0yuJDj.mp4
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: [4/64] START -> DaAt64CsTkV.mp4
+2026-07-19 12:20:49 [INFO] ai_bulk_remix: [5/64] START -> DaDfxlKRbM2.mp4
+2026-07-19 12:22:36 [INFO] ai_bulk_remix: [1/64] DONE  DZ-b5I4s4Mn.mp4 (105.3s)
+2026-07-19 12:22:36 [INFO] ai_bulk_remix: [6/64] START -> DaGILm4u0Br.mp4
+2026-07-19 12:22:40 [INFO] ai_bulk_remix: [5/64] DONE  DaDfxlKRbM2.mp4 (109.8s)
+2026-07-19 12:22:40 [INFO] ai_bulk_remix: [7/64] START -> DaKBT8MxqyG.mp4
+2026-07-19 12:22:50 [INFO] ai_bulk_remix: [3/64] DONE  DZ7mt0yuJDj.mp4 (119.2s)
+2026-07-19 12:22:50 [INFO] ai_bulk_remix: [8/64] START -> DaM9AuaPBLC.mp4
+2026-07-19 12:23:02 [INFO] ai_bulk_remix: [4/64] DONE  DaAt64CsTkV.mp4 (131.8s)
+2026-07-19 12:23:02 [INFO] ai_bulk_remix: [9/64] START -> DaMo4WItThV.mp4
+2026-07-19 12:23:23 [INFO] ai_bulk_remix: [2/64] DONE  DZ45fSiOoGM.mp4 (152.6s)
+2026-07-19 12:23:23 [INFO] ai_bulk_remix: [10/64] START -> DaRnTPCOk0R.mp4
+2026-07-19 12:24:06 [INFO] ai_bulk_remix: [7/64] DONE  DaKBT8MxqyG.mp4 (82.8s)
+2026-07-19 12:24:06 [INFO] ai_bulk_remix: [11/64] START -> DaS9iQCRuZG.mp4
+2026-07-19 12:24:50 [INFO] ai_bulk_remix: [8/64] DONE  DaM9AuaPBLC.mp4 (117.8s)
+2026-07-19 12:24:50 [INFO] ai_bulk_remix: [12/64] START -> DaXC0EEsquU.mp4
+2026-07-19 12:24:53 [INFO] ai_bulk_remix: [10/64] DONE  DaRnTPCOk0R.mp4 (87.4s)
+2026-07-19 12:24:53 [INFO] ai_bulk_remix: [13/64] START -> DaalquZBCvE.mp4
+2026-07-19 12:24:56 [INFO] ai_bulk_remix: [6/64] DONE  DaGILm4u0Br.mp4 (137.9s)
+2026-07-19 12:24:56 [INFO] ai_bulk_remix: [14/64] START -> DafY8nSRtWA.mp4
+2026-07-19 12:25:35 [INFO] ai_bulk_remix: [13/64] DONE  DaalquZBCvE.mp4 (39.9s)
+2026-07-19 12:25:35 [INFO] ai_bulk_remix: [15/64] START -> DakQ-dbB0z1.mp4
+2026-07-19 12:25:43 [INFO] ai_bulk_remix: [11/64] DONE  DaS9iQCRuZG.mp4 (93.3s)
+2026-07-19 12:25:43 [INFO] ai_bulk_remix: [16/64] START -> DanQP8ySSCM.mp4
+2026-07-19 12:25:53 [INFO] ai_bulk_remix: [9/64] DONE  DaMo4WItThV.mp4 (167.3s)
+2026-07-19 12:25:54 [INFO] ai_bulk_remix: [17/64] START -> Dao69IBvbty.mp4
+2026-07-19 12:27:08 [INFO] ai_bulk_remix: [14/64] DONE  DafY8nSRtWA.mp4 (128.1s)
+2026-07-19 12:27:08 [INFO] ai_bulk_remix: [18/64] START -> DaupJsZB7Qc.mp4
+2026-07-19 12:27:20 [INFO] ai_bulk_remix: [15/64] DONE  DakQ-dbB0z1.mp4 (95.3s)
+2026-07-19 12:27:20 [INFO] ai_bulk_remix: [19/64] START -> know_healthy_Avg_Indian_Dad_😆_#reels_#funny_#fyp_#trending_#dad_2026-06-19_DZxXbi1B4Bn_3923019798308946023.mp4
+2026-07-19 12:28:00 [INFO] ai_bulk_remix: [12/64] DONE  DaXC0EEsquU.mp4 (187.3s)
+2026-07-19 12:28:00 [INFO] ai_bulk_remix: [20/64] START -> know_healthy_Avg_Indian_Friend_😆_Made_with_Picsart_#PicsartPartner_@picsa_2026-06-22_DZ45fSiOoGM_3925139914109911436.mp4
+2026-07-19 12:29:00 [INFO] ai_bulk_remix: [16/64] DONE  DanQP8ySSCM.mp4 (192.7s)
+2026-07-19 12:29:00 [INFO] ai_bulk_remix: [21/64] START -> know_healthy_Bandra_Ki_Gf_🥀😂_#reels_#explore_#fumny_2026-07-03_DaM9AuaPBLC_3930784905457046210.mp4
+2026-07-19 12:29:04 [INFO] ai_bulk_remix: [18/64] DONE  DaupJsZB7Qc.mp4 (113.2s)
+2026-07-19 12:29:04 [INFO] ai_bulk_remix: [22/64] START -> know_healthy_Barfi_Ji_Ka_Divorce_💔_#reels_#explore_#trending_#rasmalai_2026-05-07_DYB08vjRBUN_3891624425669530893.mp4
+2026-07-19 12:29:36 [INFO] ai_bulk_remix: [19/64] DONE  know_healthy_Avg_Indian_Dad_😆_#reels_#funny_#fyp_#trending_#dad_2026-06-19_DZxXbi1B4Bn_3923019798308946023.mp4 (129.9s)
+2026-07-19 12:29:39 [INFO] ai_bulk_remix: [23/64] START -> know_healthy_Bechara_Amrud_Made_with_Picsart_#PicsartPartner_@picsart.cre_2026-06-06_DZOx8yKpBWt_3913284807544804781.mp4
+2026-07-19 12:29:44 [INFO] ai_bulk_remix: [17/64] DONE  Dao69IBvbty.mp4 (227.0s)
+2026-07-19 12:29:44 [INFO] ai_bulk_remix: [24/64] START -> know_healthy_Bechara_Maalik_😂_#reels_#fyp_#trending_#explore_2026-05-26_DYygU3Ttu2e_3905325998148087198.mp4
+2026-07-19 12:30:35 [INFO] ai_bulk_remix: [20/64] DONE  know_healthy_Avg_Indian_Friend_😆_Made_with_Picsart_#PicsartPartner_@picsa_2026-06-22_DZ45fSiOoGM_3925139914109911436.mp4 (152.4s)
+2026-07-19 12:30:35 [INFO] ai_bulk_remix: [25/64] START -> know_healthy_Bechari_Litchi_😂💀_Made_with_Happy_Horse_model_on_Picsart_@pi_2026-06-13_DZht8sAhqTj_3918615233304110307.mp4
+2026-07-19 12:30:44 [INFO] ai_bulk_remix: [21/64] DONE  know_healthy_Bandra_Ki_Gf_🥀😂_#reels_#explore_#fumny_2026-07-03_DaM9AuaPBLC_3930784905457046210.mp4 (100.0s)
+2026-07-19 12:30:44 [INFO] ai_bulk_remix: [26/64] START -> know_healthy_Bhaichara_On_Top_😆_#reels_#trending_#funny_2026-07-02_DaS9iQCRuZG_3932476059165320774.mp4
+2026-07-19 12:31:15 [INFO] ai_bulk_remix: [23/64] DONE  know_healthy_Bechara_Amrud_Made_with_Picsart_#PicsartPartner_@picsart.cre_2026-06-06_DZOx8yKpBWt_3913284807544804781.mp4 (93.7s)
+2026-07-19 12:31:15 [INFO] ai_bulk_remix: [27/64] START -> know_healthy_Bhikhari_Aashiq_Ki_Shayari_😆_Made_with_Picsart_#PicsartPartn_2026-06-25_DaAt64CsTkV_3927340833064433941.mp4
+2026-07-19 12:31:33 [INFO] ai_bulk_remix: [22/64] DONE  know_healthy_Barfi_Ji_Ka_Divorce_💔_#reels_#explore_#trending_#rasmalai_2026-05-07_DYB08vjRBUN_3891624425669530893.mp4 (146.9s)
+2026-07-19 12:31:33 [INFO] ai_bulk_remix: [28/64] START -> know_healthy_Bikhari_Depression_Mein_Chala_Gaya_😂_#funny_#trending_#reels_2026-06-10_DZZ9fXppcVe_3916431787511104862.mp4
+2026-07-19 12:31:41 [INFO] ai_bulk_remix: [25/64] DONE  know_healthy_Bechari_Litchi_😂💀_Made_with_Happy_Horse_model_on_Picsart_@pi_2026-06-13_DZht8sAhqTj_3918615233304110307.mp4 (63.5s)
+2026-07-19 12:31:41 [INFO] ai_bulk_remix: [29/64] START -> know_healthy_Chai_Pani_Ka_Jugaad_😆_#trending_#funny_#reels_2026-07-09_DakQ-dbB0z1_3937346635172367605.mp4
+2026-07-19 12:32:16 [INFO] ai_bulk_remix: [26/64] DONE  know_healthy_Bhaichara_On_Top_😆_#reels_#trending_#funny_2026-07-02_DaS9iQCRuZG_3932476059165320774.mp4 (89.6s)
+2026-07-19 12:32:16 [INFO] ai_bulk_remix: [30/64] START -> know_healthy_Class_Me_Eeta-Teeta_😭😂_Made_with_PicsArt_@picsart_@picsart.c_2026-05-27_DY1V5lcS0ui_3906124568003824546.mp4
+2026-07-19 12:32:58 [INFO] ai_bulk_remix: [28/64] DONE  know_healthy_Bikhari_Depression_Mein_Chala_Gaya_😂_#funny_#trending_#reels_2026-06-10_DZZ9fXppcVe_3916431787511104862.mp4 (82.9s)
+2026-07-19 12:32:58 [INFO] ai_bulk_remix: [31/64] START -> know_healthy_Divorce_💔_But_not_when_you_have_@withpronto_😉_#reels_#fyp_#t_2026-07-11_Dao69IBvbty_3938657161340369778.mp4
+2026-07-19 12:33:22 [INFO] ai_bulk_remix: [24/64] DONE  know_healthy_Bechara_Maalik_😂_#reels_#fyp_#trending_#explore_2026-05-26_DYygU3Ttu2e_3905325998148087198.mp4 (215.4s)
+2026-07-19 12:33:22 [INFO] ai_bulk_remix: [32/64] START -> know_healthy_Dragon_Fruit_And_Remote_Made_with_PicsArt_@picsart_@picsart_2026-05-30_DY9OvYJS5Nw_3908344880019772272.mp4
+2026-07-19 12:33:23 [INFO] ai_bulk_remix: [29/64] DONE  know_healthy_Chai_Pani_Ka_Jugaad_😆_#trending_#funny_#reels_2026-07-09_DakQ-dbB0z1_3937346635172367605.mp4 (96.9s)
+2026-07-19 12:33:23 [INFO] ai_bulk_remix: [33/64] START -> know_healthy_Ek_Aashiq_Aisa_Bhi..._😆_#funny_#trending_#reels_#explore_2026-07-13_DaupJsZB7Qc_3940267710042584092.mp4
+2026-07-19 12:33:35 [INFO] ai_bulk_remix: [27/64] DONE  know_healthy_Bhikhari_Aashiq_Ki_Shayari_😆_Made_with_Picsart_#PicsartPartn_2026-06-25_DaAt64CsTkV_3927340833064433941.mp4 (137.9s)
+2026-07-19 12:33:35 [INFO] ai_bulk_remix: [34/64] START -> know_healthy_Ek_Shadhi_Aisa_Bhi_🥺_Made_with_Picsart_#PicsartPartner_@pics_2026-06-26_DaDfxlKRbM2_3928123046594196278.mp4
+2026-07-19 12:34:06 [INFO] ai_bulk_remix: [30/64] DONE  know_healthy_Class_Me_Eeta-Teeta_😭😂_Made_with_PicsArt_@picsart_@picsart.c_2026-05-27_DY1V5lcS0ui_3906124568003824546.mp4 (107.9s)
+2026-07-19 12:34:06 [INFO] ai_bulk_remix: [35/64] START -> know_healthy_Ep_1_Mishri_And_Businessman_Keshar_#reels_#trending_#explore_2026-04-29_DXtqWDdCR0m_3885948286980922662.mp4
+2026-07-19 12:35:32 [INFO] ai_bulk_remix: [33/64] DONE  know_healthy_Ek_Aashiq_Aisa_Bhi..._😆_#funny_#trending_#reels_#explore_2026-07-13_DaupJsZB7Qc_3940267710042584092.mp4 (127.1s)
+2026-07-19 12:35:32 [INFO] ai_bulk_remix: [36/64] START -> know_healthy_Ep_2_Mishri_And_Businessman_Keshar_#trending_#reels_#keshar_2026-04-30_DXwta2jpGUQ_3886806235800167696.mp4
+2026-07-19 12:35:37 [INFO] ai_bulk_remix: [34/64] DONE  know_healthy_Ek_Shadhi_Aisa_Bhi_🥺_Made_with_Picsart_#PicsartPartner_@pics_2026-06-26_DaDfxlKRbM2_3928123046594196278.mp4 (118.4s)
+2026-07-19 12:35:37 [INFO] ai_bulk_remix: [37/64] START -> know_healthy_Ep_3_Mishri_&_Businessman_Keshar_(_Office_Joining)_Business_2026-05-03_DX3ZiLluGHc_3888689103326699996.mp4
+2026-07-19 12:36:32 [INFO] ai_bulk_remix: [31/64] DONE  know_healthy_Divorce_💔_But_not_when_you_have_@withpronto_😉_#reels_#fyp_#t_2026-07-11_Dao69IBvbty_3938657161340369778.mp4 (211.2s)
+2026-07-19 12:36:32 [INFO] ai_bulk_remix: [38/64] START -> know_healthy_Food_Lover_Rasmalai_😂_#reels_#trending_#rasmalai_#love_2026-05-17_DYcJU_XOflQ_3899032402239551824.mp4
+2026-07-19 12:38:18 [INFO] ai_bulk_remix: [32/64] DONE  know_healthy_Dragon_Fruit_And_Remote_Made_with_PicsArt_@picsart_@picsart_2026-05-30_DY9OvYJS5Nw_3908344880019772272.mp4 (293.6s)
+2026-07-19 12:38:18 [INFO] ai_bulk_remix: [39/64] START -> know_healthy_Foundation_Aata_🥲💀_#trending_#reels_#explore_#funny_2026-07-06_DaalquZBCvE_3934622888212310980.mp4
+2026-07-19 12:38:29 [INFO] ai_bulk_remix: [35/64] DONE  know_healthy_Ep_1_Mishri_And_Businessman_Keshar_#reels_#trending_#explore_2026-04-29_DXtqWDdCR0m_3885948286980922662.mp4 (259.1s)
+2026-07-19 12:38:29 [INFO] ai_bulk_remix: [40/64] START -> know_healthy_Idea_Ulta_Ho_Gaya_😂_Made_with_PicsArt_@picsart_@picsart.crea_2026-05-29_DY6yy6FOyoq_3907659027361507882.mp4
+2026-07-19 12:38:30 [INFO] ai_bulk_remix: [38/64] DONE  know_healthy_Food_Lover_Rasmalai_😂_#reels_#trending_#rasmalai_#love_2026-05-17_DYcJU_XOflQ_3899032402239551824.mp4 (115.8s)
+2026-07-19 12:38:30 [INFO] ai_bulk_remix: [41/64] START -> know_healthy_Is_Jodi_Ko_Kya_Naam_Du_😂😭_Made_with_Happy_Horse_model_on_Pic_2026-06-13_DZgoD6NpIQ4_3918307866337117240.mp4
+2026-07-19 12:38:41 [INFO] ai_bulk_remix: [36/64] DONE  know_healthy_Ep_2_Mishri_And_Businessman_Keshar_#trending_#reels_#keshar_2026-04-30_DXwta2jpGUQ_3886806235800167696.mp4 (186.6s)
+2026-07-19 12:38:41 [INFO] ai_bulk_remix: [42/64] START -> know_healthy_Jaise_Karam_Waise_Fal_😭😂_Made_with_Picsart_#PicsartPartner_@_2026-06-08_DZVDmAEhNEq_3915051256623976746.mp4
+2026-07-19 12:38:54 [INFO] ai_bulk_remix: [39/64] DONE  know_healthy_Foundation_Aata_🥲💀_#trending_#reels_#explore_#funny_2026-07-06_DaalquZBCvE_3934622888212310980.mp4 (33.4s)
+2026-07-19 12:38:54 [INFO] ai_bulk_remix: [43/64] START -> know_healthy_Last_Option_💀_#reels_#trending_#comedy_#explore_#fyp_2026-06-05_DZMCHdbh1Gq_3912511485007843754.mp4
+2026-07-19 12:39:48 [INFO] ai_bulk_remix: [43/64] DONE  know_healthy_Last_Option_💀_#reels_#trending_#comedy_#explore_#fyp_2026-06-05_DZMCHdbh1Gq_3912511485007843754.mp4 (51.3s)
+2026-07-19 12:39:48 [INFO] ai_bulk_remix: [44/64] START -> know_healthy_Litchi_Vs_Papita_#reels_#funny_#fyp_#mango_2026-05-23_DYrlbRZBbSQ_3903378103866864784.mp4
+2026-07-19 12:39:58 [INFO] ai_bulk_remix: [41/64] DONE  know_healthy_Is_Jodi_Ko_Kya_Naam_Du_😂😭_Made_with_Happy_Horse_model_on_Pic_2026-06-13_DZgoD6NpIQ4_3918307866337117240.mp4 (86.3s)
+2026-07-19 12:39:59 [INFO] ai_bulk_remix: [45/64] START -> know_healthy_Mango_Ki_Loyal_Girlfriend_😂_#reels_#trending_#funny_#fyp_2026-06-16_DZpcUt4pGgw_3920789519563253808.mp4
+2026-07-19 12:40:07 [INFO] ai_bulk_remix: [40/64] DONE  know_healthy_Idea_Ulta_Ho_Gaya_😂_Made_with_PicsArt_@picsart_@picsart.crea_2026-05-29_DY6yy6FOyoq_3907659027361507882.mp4 (96.6s)
+2026-07-19 12:40:07 [INFO] ai_bulk_remix: [46/64] START -> know_healthy_Mango_Toh_Khel_Gaya_Made_with_PicsArt_#picsartpartner_@picsa_2026-06-04_DZJiR_YhRiS_3911808521217579154.mp4
+2026-07-19 12:40:11 [INFO] ai_bulk_remix: [37/64] DONE  know_healthy_Ep_3_Mishri_&_Businessman_Keshar_(_Office_Joining)_Business_2026-05-03_DX3ZiLluGHc_3888689103326699996.mp4 (271.0s)
+2026-07-19 12:40:11 [INFO] ai_bulk_remix: [47/64] START -> know_healthy_Mohalla_Me_Petrol_Khatm_😆_Made_with_Picsart_#PicsartPartner_2026-06-27_DaGILm4u0Br_3928863706967654507.mp4
+2026-07-19 12:41:41 [INFO] ai_bulk_remix: [42/64] DONE  know_healthy_Jaise_Karam_Waise_Fal_😭😂_Made_with_Picsart_#PicsartPartner_@_2026-06-08_DZVDmAEhNEq_3915051256623976746.mp4 (177.4s)
+2026-07-19 12:41:41 [INFO] ai_bulk_remix: [48/64] START -> know_healthy_Mood_Change_#empirestatebuilding_#reels_#trending_#couple_2026-07-04_DaXC0EEsquU_3933625173411015572.mp4
+2026-07-19 12:42:00 [INFO] ai_bulk_remix: [44/64] DONE  know_healthy_Litchi_Vs_Papita_#reels_#funny_#fyp_#mango_2026-05-23_DYrlbRZBbSQ_3903378103866864784.mp4 (128.6s)
+2026-07-19 12:42:00 [INFO] ai_bulk_remix: [49/64] START -> know_healthy_Neta_Ji_Ka_Bhatija_💀_Made_with_Picsart_#PicsartPartner_@pics_2026-06-09_DZWlTJ0suyk_3915480969984011428.mp4
+2026-07-19 12:42:04 [INFO] ai_bulk_remix: [46/64] DONE  know_healthy_Mango_Toh_Khel_Gaya_Made_with_PicsArt_#picsartpartner_@picsa_2026-06-04_DZJiR_YhRiS_3911808521217579154.mp4 (114.2s)
+2026-07-19 12:42:04 [INFO] ai_bulk_remix: [50/64] START -> know_healthy_Online_Wala_Pyar_😳_#reels_#love_#pyar_#online_2026-04-26_DXmMPW3Ce5x_3883845560549633649.mp4
+2026-07-19 12:42:08 [INFO] ai_bulk_remix: [47/64] DONE  know_healthy_Mohalla_Me_Petrol_Khatm_😆_Made_with_Picsart_#PicsartPartner_2026-06-27_DaGILm4u0Br_3928863706967654507.mp4 (114.8s)
+2026-07-19 12:42:10 [INFO] ai_bulk_remix: [51/64] START -> know_healthy_Party_Me_Crush_Barfi_#trending_#reels_#fyp_#viral_2026-04-24_DXf_9E2iYFF_3882102677844885829.mp4
+2026-07-19 12:42:30 [INFO] ai_bulk_remix: [45/64] DONE  know_healthy_Mango_Ki_Loyal_Girlfriend_😂_#reels_#trending_#funny_#fyp_2026-06-16_DZpcUt4pGgw_3920789519563253808.mp4 (149.5s)
+2026-07-19 12:42:30 [INFO] ai_bulk_remix: [52/64] START -> know_healthy_Permanent_Breakup_💔_Made_with_Picsart_#PicsartPartner_@picsa_2026-06-23_DZ7mt0yuJDj_3925901775012925667.mp4
+2026-07-19 12:43:21 [INFO] ai_bulk_remix: [49/64] DONE  know_healthy_Neta_Ji_Ka_Bhatija_💀_Made_with_Picsart_#PicsartPartner_@pics_2026-06-09_DZWlTJ0suyk_3915480969984011428.mp4 (79.5s)
+2026-07-19 12:43:22 [INFO] ai_bulk_remix: [53/64] START -> know_healthy_Rangdaar_Litchi_Made_with_PicsArt_@picsart_@picsart.creators_2026-06-03_DZHAJTmPYjh_3911095440912517345.mp4
+2026-07-19 12:44:08 [INFO] ai_bulk_remix: [50/64] DONE  know_healthy_Online_Wala_Pyar_😳_#reels_#love_#pyar_#online_2026-04-26_DXmMPW3Ce5x_3883845560549633649.mp4 (121.2s)
+2026-07-19 12:44:08 [INFO] ai_bulk_remix: [54/64] START -> know_healthy_Rasmalai_Ka_Revenge_💀_@mamaearth.in_#reels_#trending_#ad_2026-07-10_DanQP8ySSCM_3938187863963279500.mp4
+2026-07-19 12:44:30 [INFO] ai_bulk_remix: [48/64] DONE  know_healthy_Mood_Change_#empirestatebuilding_#reels_#trending_#couple_2026-07-04_DaXC0EEsquU_3933625173411015572.mp4 (165.3s)
+2026-07-19 12:44:30 [INFO] ai_bulk_remix: [55/64] START -> know_healthy_Real_Flex_😂_#trending_#cricket_#reels_#funny_#fyp_2026-06-18_DZtn6ssp2Hh_3921966408046961121.mp4
+2026-07-19 12:44:31 [INFO] ai_bulk_remix: [52/64] DONE  know_healthy_Permanent_Breakup_💔_Made_with_Picsart_#PicsartPartner_@picsa_2026-06-23_DZ7mt0yuJDj_3925901775012925667.mp4 (117.7s)
+2026-07-19 12:44:31 [INFO] ai_bulk_remix: [56/64] START -> know_healthy_Saare_Raaz_Khul_Gaye_😆🥲_Made_with_Picsart_#PicsartPartner_@p_2026-06-30_DaMo4WItThV_3930696368707156053.mp4
+2026-07-19 12:44:39 [INFO] ai_bulk_remix: [53/64] DONE  know_healthy_Rangdaar_Litchi_Made_with_PicsArt_@picsart_@picsart.creators_2026-06-03_DZHAJTmPYjh_3911095440912517345.mp4 (74.3s)
+2026-07-19 12:44:39 [INFO] ai_bulk_remix: [57/64] START -> know_healthy_Smart_Girlfriend_😆_#trending_#funny_#reels_#fyp_2026-07-07_DafY8nSRtWA_3935974317812536704.mp4
+2026-07-19 12:45:22 [INFO] ai_bulk_remix: [51/64] DONE  know_healthy_Party_Me_Crush_Barfi_#trending_#reels_#fyp_#viral_2026-04-24_DXf_9E2iYFF_3882102677844885829.mp4 (189.2s)
+2026-07-19 12:45:22 [INFO] ai_bulk_remix: [58/64] START -> know_healthy_Special_Juice_😂_#reels_#trending_#funny_#explore_#viral_2026-07-02_DaRnTPCOk0R_3932096795298647313.mp4
+2026-07-19 12:46:07 [INFO] ai_bulk_remix: [55/64] DONE  know_healthy_Real_Flex_😂_#trending_#cricket_#reels_#funny_#fyp_2026-06-18_DZtn6ssp2Hh_3921966408046961121.mp4 (95.4s)
+2026-07-19 12:46:07 [INFO] ai_bulk_remix: [59/64] START -> know_healthy_Tag_Your_Friend_🤣🍻_#reels_#funny_#explore_#viral_#friend_2026-06-21_DZ1osOJyOM7_3924221611037221691.mp4
+2026-07-19 12:46:43 [INFO] ai_bulk_remix: [58/64] DONE  know_healthy_Special_Juice_😂_#reels_#trending_#funny_#explore_#viral_2026-07-02_DaRnTPCOk0R_3932096795298647313.mp4 (78.0s)
+2026-07-19 12:46:43 [INFO] ai_bulk_remix: [60/64] START -> know_healthy_Tag_Your_Modern_Sister_😂_Made_with_Picsart_#PicsartPartner_@_2026-06-24_DZ-b5I4s4Mn_3926698598920848167.mp4
+2026-07-19 12:46:50 [INFO] ai_bulk_remix: [57/64] DONE  know_healthy_Smart_Girlfriend_😆_#trending_#funny_#reels_#fyp_2026-07-07_DafY8nSRtWA_3935974317812536704.mp4 (127.2s)
+2026-07-19 12:46:50 [INFO] ai_bulk_remix: [61/64] START -> know_healthy_Tamatar_Khao_😂_#reels_#trending_#funny_#explore_#fyp_2026-06-29_DaKBT8MxqyG_3929959393189604486.mp4
+2026-07-19 12:47:03 [INFO] ai_bulk_remix: [56/64] DONE  know_healthy_Saare_Raaz_Khul_Gaye_😆🥲_Made_with_Picsart_#PicsartPartner_@p_2026-06-30_DaMo4WItThV_3930696368707156053.mp4 (150.6s)
+2026-07-19 12:47:03 [INFO] ai_bulk_remix: [62/64] START -> know_healthy_Unexpected_Twist_💀_#reels_#trending_#funny_#explore_2026-06-01_DZBrbq3P4gG_3909596968984217606.mp4
+2026-07-19 12:47:14 [INFO] ai_bulk_remix: [54/64] DONE  know_healthy_Rasmalai_Ka_Revenge_💀_@mamaearth.in_#reels_#trending_#ad_2026-07-10_DanQP8ySSCM_3938187863963279500.mp4 (183.5s)
+2026-07-19 12:47:14 [INFO] ai_bulk_remix: [63/64] START -> know_healthy_Woh_Alg_Hi_Level_Ka_Mango_Tha_🥹_#reels_#funny_#explore_#fyp_2026-06-11_DZcvml_ytZj_3917215136230332003.mp4
+2026-07-19 12:48:24 [INFO] ai_bulk_remix: [61/64] DONE  know_healthy_Tamatar_Khao_😂_#reels_#trending_#funny_#explore_#fyp_2026-06-29_DaKBT8MxqyG_3929959393189604486.mp4 (91.7s)
+2026-07-19 12:48:24 [INFO] ai_bulk_remix: [64/64] START -> know_healthy_🥹_Game_Me_Break_Made_using_Recraft_V4.1_model_on_Picsart_(Ad_2026-06-14_DZkiZQyh66E_3919408845315092100.mp4
+2026-07-19 12:48:30 [INFO] ai_bulk_remix: [62/64] DONE  know_healthy_Unexpected_Twist_💀_#reels_#trending_#funny_#explore_2026-06-01_DZBrbq3P4gG_3909596968984217606.mp4 (83.7s)
+2026-07-19 12:48:37 [INFO] ai_bulk_remix: [60/64] DONE  know_healthy_Tag_Your_Modern_Sister_😂_Made_with_Picsart_#PicsartPartner_@_2026-06-24_DZ-b5I4s4Mn_3926698598920848167.mp4 (110.5s)
+2026-07-19 12:48:55 [INFO] ai_bulk_remix: [63/64] DONE  know_healthy_Woh_Alg_Hi_Level_Ka_Mango_Tha_🥹_#reels_#funny_#explore_#fyp_2026-06-11_DZcvml_ytZj_3917215136230332003.mp4 (98.5s)
+2026-07-19 12:48:59 [INFO] ai_bulk_remix: [59/64] DONE  know_healthy_Tag_Your_Friend_🤣🍻_#reels_#funny_#explore_#viral_#friend_2026-06-21_DZ1osOJyOM7_3924221611037221691.mp4 (167.6s)
+2026-07-19 12:49:06 [INFO] ai_bulk_remix: [64/64] DONE  know_healthy_🥹_Game_Me_Break_Made_using_Recraft_V4.1_model_on_Picsart_(Ad_2026-06-14_DZkiZQyh66E_3919408845315092100.mp4 (34.5s)
+2026-07-19 12:49:06 [INFO] ai_bulk_remix: ==================================================
+2026-07-19 12:49:06 [INFO] ai_bulk_remix: BATCH PROCESSING COMPLETED
+2026-07-19 12:49:06 [INFO] ai_bulk_remix: Successful: 64
+2026-07-19 12:49:06 [INFO] ai_bulk_remix: Failed: 0
+2026-07-19 12:49:06 [INFO] ai_bulk_remix: Skipped: 0
+2026-07-19 12:49:06 [INFO] ai_bulk_remix: Total time: 1697.1s
+2026-07-19 12:49:06 [INFO] ai_bulk_remix: ==================================================
+2026-07-19 12:49:55 [INFO] ai_bulk_remix: Application exiting with code 0

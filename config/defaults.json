@@ -1,0 +1,235 @@
+{
+  "app": {
+    "max_parallel_workers": 4,
+    "theme": "dark",
+    "version": "1.0.0"
+  },
+  "processing": {
+    "max_workers": 4,
+    "max_retries": 3,
+    "timeout_per_video": 600,
+    "gpu_acceleration": true
+  },
+  "video": {
+    "default_fps": 30,
+    "default_bitrate": "5M",
+    "crf": 23
+  },
+  "export": {
+    "gpu_encoders": [
+      "h264_nvenc",
+      "hevc_nvenc",
+      "h264_qsv",
+      "hevc_qsv",
+      "h264_amf",
+      "av1_nvenc"
+    ],
+    "cpu_encoders": [
+      "libx264",
+      "libx265",
+      "libsvtav1"
+    ],
+    "resolutions": [
+      "original",
+      "Original (Min 720p)",
+      "720p",
+      "1080p",
+      "2K",
+      "4K"
+    ],
+    "formats": [
+      "mp4",
+      "mov",
+      "mkv",
+      "webm"
+    ]
+  },
+  "ai": {
+    "whisper_model": "base",
+    "rembg_model": "u2net",
+    "super_resolution_model": "RealESRGAN_x4plus",
+    "face_enhancement_model": "GFPGANv1.4"
+  },
+  "audio_processing": {
+    "sample_rate": 44100,
+    "fade_duration": 2.0,
+    "normalize": true
+  },
+  "logging": {
+    "level": "INFO",
+    "max_log_size_mb": 50,
+    "log_to_file": true,
+    "log_dir": "logs"
+  },
+  "effects": {
+    "preset_filter": {
+      "enabled": false,
+      "category": "Vintage",
+      "style": "Vintage Classic (01)",
+      "randomize": false
+    },
+    "mirror": {
+      "enabled": false,
+      "mode": "horizontal",
+      "randomize": true,
+      "intensity": 1.0
+    },
+    "zoom": {
+      "enabled": false,
+      "mode": "dynamic",
+      "min_zoom": 1.0,
+      "max_zoom": 1.5,
+      "randomize": true
+    },
+    "crop": {
+      "enabled": false,
+      "mode": "center",
+      "aspect_ratio": "16:9",
+      "randomize": false
+    },
+    "rotation": {
+      "enabled": false,
+      "mode": "small",
+      "angle": 0,
+      "randomize": true
+    },
+    "speed": {
+      "enabled": false,
+      "speed": 1.0,
+      "randomize": true
+    },
+    "flip": {
+      "enabled": false,
+      "mode": "horizontal",
+      "randomize": true
+    },
+    "brightness": {
+      "enabled": false,
+      "value": 0.0,
+      "randomize": true,
+      "range": [-0.2, 0.2]
+    },
+    "contrast": {
+      "enabled": false,
+      "value": 1.0,
+      "randomize": true,
+      "range": [0.8, 1.5]
+    },
+    "saturation": {
+      "enabled": false,
+      "value": 1.0,
+      "randomize": true,
+      "range": [0.5, 1.8]
+    },
+    "hue": {
+      "enabled": false,
+      "value": 0,
+      "randomize": true,
+      "range": [-30, 30]
+    },
+    "sharpness": {
+      "enabled": false,
+      "value": 1.0,
+      "randomize": true,
+      "range": [0.5, 2.0]
+    },
+    "noise": {
+      "enabled": false,
+      "mode": "film_grain",
+      "intensity": 0.05,
+      "randomize": true
+    },
+    "motion_blur": {
+      "enabled": false,
+      "frames": 2,
+      "randomize": true
+    },
+    "camera_shake": {
+      "enabled": false,
+      "intensity": "small",
+      "randomize": true
+    },
+    "stabilization": {
+      "enabled": false
+    },
+    "border": {
+      "enabled": false,
+      "color": "#000000",
+      "width": 10
+    },
+    "background": {
+      "enabled": false,
+      "mode": "blur",
+      "color": "#000000"
+    }
+  },
+  "watermark": {
+    "enabled": false,
+    "type": "text",
+    "text": "AI Bulk Remix",
+    "font_size": 24,
+    "color": "#FFFFFF",
+    "logo_path": "",
+    "position": "bottom_right",
+    "opacity": 0.5
+  },
+  "text_overlay": {
+    "enabled": false,
+    "text": "",
+    "position": "center",
+    "animation": "fade",
+    "font_size": 24,
+    "color": "#FFFFFF"
+  },
+  "subtitles": {
+    "enabled": false,
+    "source": "whisper",
+    "language": "auto"
+  },
+  "voice": {
+    "enabled": false,
+    "mode": "tts",
+    "language": "en"
+  },
+  "audio": {
+    "sample_rate": 44100,
+    "fade_duration": 2.0,
+    "normalize": true,
+    "background_music": {
+      "enabled": false,
+      "path": "",
+      "volume": 0.3
+    },
+    "sound_effects": {
+      "enabled": false
+    }
+  },
+  "intro_outro": {
+    "intro": {
+      "enabled": false,
+      "path": ""
+    },
+    "outro": {
+      "enabled": false,
+      "path": ""
+    }
+  },
+  "logo": {
+    "enabled": false,
+    "path": "",
+    "opacity": 0.8,
+    "position": "top_right",
+    "scale": 0.15
+  },
+  "transition": {
+    "enabled": false,
+    "mode": "fade",
+    "duration": 1.0
+  },
+  "ai_remix": {
+    "enabled": true,
+    "randomize": true,
+    "duplicate_prevention": true,
+    "min_effects_vary": 3
+  }
+}
