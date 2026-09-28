@@ -41,15 +41,36 @@ class VideoProcessor:
         if progress_callback:
             self._engine.set_progress_callback(progress_callback)
 
+        temp_inpainted: Optional[str] = None
+        actual_input = input_path
         try:
+            wm_cfg = config.get("effects", {}).get("watermark", {})
+            if (
+                wm_cfg.get("enabled")
+                and wm_cfg.get("mode") == "remove_replace"
+                and wm_cfg.get("removal_quality") == "inpaint"
+            ):
+                box = wm_cfg.get("box")
+                if (
+                    box
+                    and isinstance(box, (list, tuple))
+                    and len(box) == 4
+                    and box[2] > 0
+                    and box[3] > 0
+                ):
+                    from ..ffmpeg.watermark_removal import inpaint_watermark
+                    temp_inpainted = output_path + ".inpainted.mp4"
+                    inpaint_watermark(input_path, temp_inpainted, box)
+                    actual_input = temp_inpainted
+
             # First attempt with configured encoder
-            cmd = self._builder.build(input_path, output_path, config, media_info, gpu_encoders)
+            cmd = self._builder.build(actual_input, output_path, config, media_info, gpu_encoders)
             cmd_str = self._builder.get_command_string(cmd)
             print(f"[FFmpeg CMD] {cmd_str}")
-            
+
             self._engine._cancelled = False
             result = self._engine.execute(cmd, duration)
-            
+
             # If failed and GPU encoder was used, fallback to CPU encoder
             if not result.success and gpu_encoders:
                 current_encoder = config.get("export", {}).get("encoder", "")
@@ -60,23 +81,29 @@ class VideoProcessor:
                     fallback_config["export"]["encoder"] = "libx264"
                     fallback_config["processing"] = dict(config.get("processing", {}))
                     fallback_config["processing"]["gpu_acceleration"] = False
-                    
-                    cmd2 = self._builder.build(input_path, output_path, fallback_config, media_info, [])
+
+                    cmd2 = self._builder.build(actual_input, output_path, fallback_config, media_info, [])
                     cmd_str2 = self._builder.get_command_string(cmd2)
                     print(f"[FFmpeg CMD FALLBACK] {cmd_str2}")
-                    
+
                     result2 = self._engine.execute(cmd2, duration)
                     if result2.success:
                         return result2
                     # Return original error if fallback also fails
                     result.error_message = f"GPU encoder failed: {result.error_message}\nFallback also failed: {result2.error_message}"
-            
+
             if not result.success:
                 result.error_message = f"Command: {cmd_str}\nError: {result.error_message}"
-            
+
             return result
         except Exception as e:
             return FFmpegResult(success=False, error_message=str(e))
+        finally:
+            if temp_inpainted and os.path.exists(temp_inpainted):
+                try:
+                    os.remove(temp_inpainted)
+                except OSError:
+                    pass
 
     def process_with_retry(self, input_path: str, output_path: str, config: Dict[str, Any],
                            max_retries: int = 3,

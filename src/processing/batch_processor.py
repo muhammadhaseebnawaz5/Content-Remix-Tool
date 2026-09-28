@@ -108,6 +108,8 @@ class BatchProcessor:
 
             file_config = deepcopy(config)
             self._randomizer.apply_randomization(file_config, index)
+            if file_config.get("ai_remix", {}).get("duplicate_prevention", False):
+                self._randomizer.apply_forced_variation(file_config.setdefault("effects", {}))
 
             future = self._executor.submit(
                 self._process_single,

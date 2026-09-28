@@ -183,6 +183,11 @@ class LogoEffect(BaseEffect):
             return ""
         position = self.config.get("position", "top_right")
         opacity = self.config.get("opacity", 0.8)
-        scale = self.config.get("scale", 0.15)
         pos = self.POS_MAP.get(position, self.POS_MAP["top_right"])
-        return f"movie='{path}'[logo];[logo]format=rgba,colorchannelmixer=aa={opacity:.2f},scale=iw*{scale}:-1[logo_scaled];[in][logo_scaled]overlay={pos}[out]"
+        p = path.replace("\\", "/").replace(":", "\\:")
+        # scale2ref sizes the logo to 14% of the VIDEO's width (clamped 32–320px).
+        return (
+            f"movie='{p}',format=rgba,colorchannelmixer=aa={opacity:.2f}[logo_raw];"
+            f"[logo_raw][in]scale2ref=w='min(max(main_w*0.14\\,32)\\,320)':h=-1[logo_scaled][vid];"
+            f"[vid][logo_scaled]overlay={pos}[out]"
+        )

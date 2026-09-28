@@ -5,7 +5,7 @@ Randomizer - Applies random parameters per video for duplicate prevention.
 import random
 import hashlib
 import json
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional, Tuple
 
 
 class Randomizer:
@@ -98,26 +98,66 @@ class Randomizer:
             varied_count += 1
 
         # Duplicate prevention: ensure minimum varied effects
+        # NOTE: We no longer mutate here — the caller must call
+        # get_forced_effects() first, show the user a consent dialog,
+        # and then call apply_forced_variation() if approved.
+        # (self._pending_forced is set so the caller can inspect it.)
         min_vary = ai_remix.get("min_effects_vary", 3)
         if ai_remix.get("duplicate_prevention", False) and varied_count < min_vary:
-            self._force_variation(effects, min_vary - varied_count)
+            needed = min_vary - varied_count
+            self._pending_forced = self._collect_forced_effects(effects, needed)
+        else:
+            self._pending_forced = []
 
         # Reset random seed
         random.seed()
 
-    def _force_variation(self, effects: Dict[str, Any], count: int) -> None:
-        """Force-enable and vary random effects to meet minimum."""
+    def _collect_forced_effects(self, effects: Dict[str, Any], count: int) -> List[str]:
+        """Return the list of effect names that *would* be force-enabled to meet
+        the minimum variation count.  Does NOT mutate anything — callers must
+        call apply_forced_variation() after obtaining user consent."""
         candidates = ["brightness", "contrast", "saturation", "hue", "sharpness", "noise"]
-        varied = 0
+        will_force: List[str] = []
         for cand in candidates:
-            if varied >= count:
+            if len(will_force) >= count:
                 break
+            eff = effects.get(cand, {})
+            if not eff.get("enabled", False):
+                will_force.append(cand)
+        return will_force
+
+    def get_pending_forced_effects(self) -> List[str]:
+        """Return the list of effects that need to be force-enabled (set after
+        apply_randomization() runs).  Empty list means no forcing is needed."""
+        return list(getattr(self, "_pending_forced", []))
+
+    def apply_forced_variation(self, effects: Dict[str, Any]) -> None:
+        """Actually enable + mark-randomize + assign random values to the effects
+        collected during apply_randomization(). Call this ONLY after the user has consented."""
+        for cand in getattr(self, "_pending_forced", []):
             if cand not in effects:
                 effects[cand] = {}
-            if not effects[cand].get("enabled", False):
-                effects[cand]["enabled"] = True
-                effects[cand]["randomize"] = True
-                varied += 1
+            effects[cand]["enabled"] = True
+            effects[cand]["randomize"] = True
+            if cand == "brightness":
+                r = effects[cand].get("range", [-0.2, 0.2])
+                effects[cand]["value"] = round(random.uniform(r[0], r[1]), 3)
+            elif cand == "contrast":
+                r = effects[cand].get("range", [0.8, 1.5])
+                effects[cand]["value"] = round(random.uniform(r[0], r[1]), 3)
+            elif cand == "saturation":
+                r = effects[cand].get("range", [0.5, 1.8])
+                effects[cand]["value"] = round(random.uniform(r[0], r[1]), 3)
+            elif cand == "hue":
+                r = effects[cand].get("range", [-30, 30])
+                effects[cand]["value"] = round(random.uniform(r[0], r[1]), 1)
+            elif cand == "sharpness":
+                r = effects[cand].get("range", [0.5, 2.0])
+                effects[cand]["value"] = round(random.uniform(r[0], r[1]), 3)
+            elif cand == "noise":
+                effects[cand]["mode"] = random.choice(["film_grain", "light", "random"])
+                effects[cand]["intensity"] = round(random.uniform(0.02, 0.12), 3)
+        self._pending_forced = []
 
     def generate_fingerprint(self, config: Dict[str, Any]) -> str:
         """Generate MD5 hash of active effects for uniqueness verification."""

@@ -15,7 +15,9 @@ class MirrorEffect(BaseEffect):
         if not self.enabled:
             return EffectResult()
         vf = self.get_ffmpeg_filter(media_info)
-        return EffectResult(video_filter=vf, metadata={"mode": self.config.get("mode", "horizontal")})
+        return EffectResult(
+            video_filter=vf, metadata={"mode": self.config.get("mode", "horizontal")}
+        )
 
     def get_ffmpeg_filter(self, media_info: Optional[Any] = None) -> str:
         mode = self.config.get("mode", "horizontal")
@@ -66,9 +68,13 @@ class RotateEffect(BaseEffect):
     def _get_angle(self) -> float:
         mode = self.config.get("mode", "small")
         if self.randomize:
-            mode = random.choice(["small", "large", "clockwise", "anticlockwise", "random"])
+            mode = random.choice(
+                ["small", "large", "clockwise", "anticlockwise", "random"]
+            )
         if mode == "small":
-            return random.uniform(-5, 5) if self.randomize else self.config.get("angle", 0)
+            return (
+                random.uniform(-5, 5) if self.randomize else self.config.get("angle", 0)
+            )
         elif mode == "large":
             return random.uniform(-30, 30)
         elif mode == "clockwise":
@@ -87,7 +93,9 @@ class ZoomEffect(BaseEffect):
         if not self.enabled or not media_info or not media_info.video_streams:
             return EffectResult()
         vf = self.get_ffmpeg_filter(media_info)
-        return EffectResult(video_filter=vf, metadata={"mode": self.config.get("mode", "dynamic")})
+        return EffectResult(
+            video_filter=vf, metadata={"mode": self.config.get("mode", "dynamic")}
+        )
 
     def get_ffmpeg_filter(self, media_info: Optional[Any] = None) -> str:
         if not media_info or not media_info.video_streams:
@@ -99,7 +107,7 @@ class ZoomEffect(BaseEffect):
 
         mode = self.config.get("mode", "dynamic")
         min_z = self.config.get("min_zoom", 1.0)
-        max_z = self.config.get("max_zoom", 1.5)
+        max_z = self.config.get("max_zoom", self.config.get("zoom_level", 1.5))
 
         if self.randomize:
             mode = random.choice(["zoom_in", "zoom_out", "dynamic", "ken_burns"])
@@ -121,9 +129,11 @@ class ZoomEffect(BaseEffect):
         elif mode == "zoom_out":
             zoom = min_z
         elif mode == "dynamic":
-            zoom = random.uniform(min_z, max_z) if self.randomize else (min_z + max_z) / 2
+            zoom = (
+                random.uniform(min_z, max_z) if self.randomize else (min_z + max_z) / 2
+            )
         else:
-            zoom = 1.0
+            zoom = self.config.get("zoom_level", max_z)
 
         new_w = int(w / zoom)
         new_h = int(h / zoom)
@@ -135,7 +145,13 @@ class ZoomEffect(BaseEffect):
 class CropEffect(BaseEffect):
     """Crop effect with aspect ratio support."""
 
-    ASPECT_RATIOS = {"16:9": 16/9, "4:3": 4/3, "1:1": 1.0, "9:16": 9/16, "3:2": 3/2}
+    ASPECT_RATIOS = {
+        "16:9": 16 / 9,
+        "4:3": 4 / 3,
+        "1:1": 1.0,
+        "9:16": 9 / 16,
+        "3:2": 3 / 2,
+    }
 
     def apply(self, media_info: Optional[Any] = None) -> EffectResult:
         if not self.enabled or not media_info or not media_info.video_streams:
@@ -157,7 +173,7 @@ class CropEffect(BaseEffect):
             mode = random.choice(["center", "random"])
             aspect = random.choice(list(self.ASPECT_RATIOS.keys()))
 
-        target_ar = self.ASPECT_RATIOS.get(aspect, 16/9)
+        target_ar = self.ASPECT_RATIOS.get(aspect, 16 / 9)
         current_ar = w / h
 
         if current_ar > target_ar:
@@ -190,9 +206,7 @@ class SpeedEffect(BaseEffect):
         v_filter = f"setpts={1/speed:.4f}*PTS"
         a_filter = self._build_audio_speed_filter(speed)
         return EffectResult(
-            video_filter=v_filter,
-            audio_filter=a_filter,
-            metadata={"speed": speed}
+            video_filter=v_filter, audio_filter=a_filter, metadata={"speed": speed}
         )
 
     def get_ffmpeg_filter(self, media_info: Optional[Any] = None) -> str:
@@ -228,9 +242,22 @@ class CameraShakeEffect(BaseEffect):
         return EffectResult(video_filter=self.get_ffmpeg_filter(media_info))
 
     def get_ffmpeg_filter(self, media_info: Optional[Any] = None) -> str:
-        intensity = self.config.get("intensity", "small")
+        intensity = self.config.get("intensity", 0.5)
         if self.randomize:
-            intensity = random.choice(["small", "medium", "large"])
-        shake_map = {"small": 10, "medium": 25, "large": 50}
-        px = shake_map.get(intensity, 10)
-        return f"crop=iw-{px}:ih-{px}:random(0)*{px}:random(0)*{px},scale=iw:ih"
+            intensity = random.choice([0.25, 0.5, 1.0, 1.5, 2.0])
+        if isinstance(intensity, str):
+            cleaned = intensity.replace("%", "").strip()
+            try:
+                intensity = float(cleaned)
+            except ValueError:
+                intensity = 0.5
+        intensity = max(0.0, min(2.0, float(intensity)))
+        if not media_info or not media_info.video_streams:
+            return ""
+        width = media_info.video_streams[0].width
+        height = media_info.video_streams[0].height
+        if width <= 0 or height <= 0:
+            return ""
+        displacement_x = max(1, int(round(width * (intensity / 100.0))))
+        displacement_y = max(1, int(round(height * (intensity / 100.0))))
+        return f"crop=iw-{displacement_x}:ih-{displacement_y}:random(0)*{displacement_x}:random(0)*{displacement_y},scale=iw:ih"
