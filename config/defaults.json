@@ -197,8 +197,15 @@
     "normalize": true,
     "background_music": {
       "enabled": false,
-      "path": "",
-      "volume": 0.3
+      "folder": "",
+      "files": [],
+      "selection": "shuffle",
+      "mode": "mix",
+      "volume": 0.5,
+      "original_volume": 0.5,
+      "fade_in": 0.5,
+      "fade_out": 1.5,
+      "random_start": false
     },
     "sound_effects": {
       "enabled": false

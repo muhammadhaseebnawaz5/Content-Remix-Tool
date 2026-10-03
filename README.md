@@ -4,6 +4,7 @@ A desktop application for content creators to bulk-process videos with automatic
 
 ## Features
 
+- **Optional Background Music**: Select tracks from a folder or individual files, shuffle or sequence them, and trim/loop with fades
 - **Bulk Processing**: Process hundreds/thousands of videos in parallel
 - **AI Remix / Duplicate Prevention**: Automatically randomizes effects per video
 - **Rich Effects**: Mirror, zoom, crop, rotation, speed, color grading, noise, motion blur, camera shake, and more
@@ -67,6 +68,8 @@ brew install ffmpeg
 ```bash
 python main.py
 ```
+
+Background music is off by default. Enable it in the Music tab and choose a folder or individual tracks; longer tracks are trimmed and shorter tracks loop to the video length.
 
 1. **Sources Tab**: Select input/output directories and scan for videos
 2. **Effects Tab**: Choose which effects to apply (randomization enabled by default)

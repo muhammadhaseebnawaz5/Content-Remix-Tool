@@ -13,6 +13,7 @@ from copy import deepcopy
 
 from ..core.event_bus import get_event_bus, EventBus
 from ..utils.randomizer import Randomizer
+from ..audio.music_library import MusicLibrary, scan_music_folder
 from .video_processor import VideoProcessor
 from ..ffmpeg.ffmpeg_engine import FFmpegResult
 
@@ -92,6 +93,17 @@ class BatchProcessor:
         self._executor = ThreadPoolExecutor(max_workers=self._max_workers)
         self._futures = []
 
+        music_config = config.get("audio", {}).get("background_music", {})
+        music_library = None
+        if music_config.get("enabled"):
+            tracks = list(music_config.get("files", [])) or scan_music_folder(
+                music_config.get("folder", "")
+            )
+            if tracks:
+                music_library = MusicLibrary(
+                    tracks, music_config.get("selection", "shuffle")
+                )
+
         for index, file_path in enumerate(files):
             if self._cancelled:
                 break
@@ -110,6 +122,16 @@ class BatchProcessor:
             self._randomizer.apply_randomization(file_config, index)
             if file_config.get("ai_remix", {}).get("duplicate_prevention", False):
                 self._randomizer.apply_forced_variation(file_config.setdefault("effects", {}))
+
+            if music_library is not None:
+                track = music_library.next_track()
+                background_music = file_config.setdefault("audio", {}).setdefault(
+                    "background_music", {}
+                )
+                background_music["file"] = track or ""
+                background_music["music_duration"] = (
+                    music_library.duration_of(track) if track else 0.0
+                )
 
             future = self._executor.submit(
                 self._process_single,

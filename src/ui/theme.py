@@ -119,6 +119,9 @@ class Theme:
             font-size: 13px;
             outline: none;
         }}
+        QLabel {{
+            background-color: transparent;
+        }}
         
         /* ===== TABS ===== */
         QTabWidget::pane {{

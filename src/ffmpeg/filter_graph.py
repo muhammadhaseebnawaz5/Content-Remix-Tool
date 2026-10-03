@@ -13,10 +13,12 @@ class FilterGraph:
     def __init__(self):
         self._video_filters: List[str] = []
         self._audio_filters: List[str] = []
+        self.speed_factor = 1.0
 
     def reset(self) -> None:
         self._video_filters.clear()
         self._audio_filters.clear()
+        self.speed_factor = 1.0
 
     def configure(
         self, effects: Dict[str, Any], media_info: Optional[Any] = None
@@ -358,6 +360,7 @@ class FilterGraph:
         speed = config.get("speed", 1.0)
         if config.get("randomize", False):
             speed = random.choice([0.8, 0.9, 1.1, 1.2])
+        self.speed_factor = speed
         # setpts goes to video filters
         self._video_filters.append(f"setpts={1/speed:.4f}*PTS")
         # atempo goes to audio filters

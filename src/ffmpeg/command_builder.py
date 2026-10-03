@@ -4,6 +4,7 @@ Uses simple -vf / -af approach for maximum reliability.
 """
 
 import os
+import random
 import subprocess
 import shutil
 from typing import List, Dict, Any, Optional
@@ -104,13 +105,21 @@ class CommandBuilder:
             else:
                 video_filters = scale_filter
 
+        music = self._plan_music(config, media_info, filter_graph.speed_factor, audio_filters)
+        if music:
+            cmd.extend(music["input_args"])
+
         # Apply video filters via -vf
         if video_filters:
             cmd.append("-vf")
             cmd.append(video_filters)
 
-        # Apply audio filters via -af
-        if audio_filters:
+        if music:
+            cmd.extend(["-filter_complex", music["filter_complex"]])
+            cmd.extend(["-map", "0:v:0", "-map", music["audio_label"]])
+            cmd.extend(music["output_args"])
+        elif audio_filters:
+            # Apply audio filters via -af
             cmd.append("-af")
             cmd.append(audio_filters)
 
@@ -131,7 +140,7 @@ class CommandBuilder:
         cmd.extend(["-b:v", bitrate, "-r", str(fps)])
 
         # Audio codec (copy if no audio filters, else re-encode)
-        if audio_filters:
+        if audio_filters or music:
             cmd.extend(["-c:a", "aac", "-b:a", "192k"])
         else:
             cmd.extend(["-c:a", "copy"])
@@ -145,6 +154,94 @@ class CommandBuilder:
         # Output
         cmd.append(output_path)
         return cmd
+
+    def _plan_music(
+        self,
+        config: Dict[str, Any],
+        media_info: Optional[Any],
+        speed_factor: float,
+        audio_filters: str,
+    ) -> Optional[Dict[str, Any]]:
+        """Prepare FFmpeg inputs and filters for optional background music."""
+        music_config = config.get("audio", {}).get("background_music", {})
+        track = music_config.get("file", "")
+        if (
+            not music_config.get("enabled")
+            or not track
+            or not os.path.isfile(track)
+        ):
+            return None
+
+        volume = max(0.0, min(2.0, float(music_config.get("volume", 0.5))))
+        fade_in = max(0.0, float(music_config.get("fade_in", 0.5)))
+        fade_out = max(0.0, float(music_config.get("fade_out", 1.5)))
+        mode = music_config.get("mode", "replace")
+        original_volume = max(
+            0.0, min(2.0, float(music_config.get("original_volume", 0.5)))
+        )
+        random_start = bool(music_config.get("random_start", False))
+        music_duration = max(0.0, float(music_config.get("music_duration", 0.0)))
+
+        video_duration = max(0.0, float(getattr(media_info, "duration", 0.0) or 0.0))
+        output_duration = (
+            video_duration / speed_factor
+            if video_duration > 0 and speed_factor > 0
+            else 0.0
+        )
+
+        input_args: List[str] = []
+        if output_duration > 0 and music_duration >= output_duration:
+            start = 0.0
+            if random_start and music_duration > output_duration:
+                start = random.uniform(0.0, music_duration - output_duration)
+            if start > 0:
+                input_args.extend(["-ss", f"{start:.2f}"])
+            input_args.extend(["-i", track])
+        else:
+            input_args.extend(["-stream_loop", "-1", "-i", track])
+
+        music_filters = [
+            "aresample=44100",
+            "aformat=channel_layouts=stereo",
+            f"volume={volume:.3f}",
+        ]
+        if fade_in > 0:
+            music_filters.append(f"afade=t=in:st=0:d={fade_in:.2f}")
+        if fade_out > 0 and output_duration > fade_out:
+            music_filters.append(
+                f"afade=t=out:st={output_duration - fade_out:.2f}:d={fade_out:.2f}"
+            )
+        music_chain = "[1:a]" + ",".join(music_filters) + "[m]"
+
+        has_original_audio = bool(getattr(media_info, "audio_streams", None))
+        if mode == "mix" and has_original_audio:
+            original_filters = [f"volume={original_volume:.3f}"]
+            if audio_filters:
+                original_filters.append(audio_filters)
+            original_filters.extend(
+                ["aresample=44100", "aformat=channel_layouts=stereo"]
+            )
+            filter_complex = (
+                f"[0:a]{','.join(original_filters)}[o];{music_chain};"
+                "[o][m]amix=inputs=2:duration=first:dropout_transition=0:"
+                "normalize=0[aout]"
+            )
+            audio_label = "[aout]"
+        else:
+            filter_complex = music_chain
+            audio_label = "[m]"
+
+        output_args = (
+            ["-t", f"{output_duration:.3f}"]
+            if output_duration > 0
+            else ["-shortest"]
+        )
+        return {
+            "input_args": input_args,
+            "filter_complex": filter_complex,
+            "audio_label": audio_label,
+            "output_args": output_args,
+        }
 
     def build_concat_command(self, inputs: List[str], output_path: str, config: Dict[str, Any]) -> List[str]:
         """Build command to concatenate multiple videos using concat demuxer."""

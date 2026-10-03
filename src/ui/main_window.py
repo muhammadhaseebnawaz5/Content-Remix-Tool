@@ -436,6 +436,7 @@ class MainWindow(QMainWindow):
         self._tabs.addTab(self._build_sources_tab(), "  Sources  ")
         self._tabs.addTab(self._build_effects_tab(), "  Effects  ")
         self._tabs.addTab(self._build_watermark_tab(), "  Watermark  ")
+        self._tabs.addTab(self._build_music_tab(), "  Music  ")
         self._tabs.addTab(self._build_export_tab(), "  Export  ")
         self._tabs.addTab(self._build_processing_tab(), "  Processing  ")
         self._tabs.addTab(self._build_monitor_tab(), "  Monitor  ")
@@ -818,6 +819,208 @@ class MainWindow(QMainWindow):
         layout.addStretch()
         tab.setWidget(container)
         return tab
+
+    MUSIC_SOURCES = [
+        ("Meta Sound Collection (Facebook/Instagram)", "https://www.facebook.com/sound/collection/"),
+        ("YouTube Audio Library", "https://www.youtube.com/audiolibrary"),
+        ("Pixabay Music", "https://pixabay.com/music/"),
+    ]
+
+    def _build_music_tab(self) -> QWidget:
+        from ..audio.music_library import MUSIC_EXTENSIONS
+
+        tab = QWidget()
+        tab_layout = QVBoxLayout(tab)
+        scroll_area = QScrollArea()
+        scroll_area.setWidgetResizable(True)
+        scroll_area.setFrameShape(QFrame.Shape.NoFrame)
+        content = QWidget()
+        layout = QVBoxLayout(content)
+        layout.setSpacing(14)
+
+        group = QGroupBox("Background Music (auto-cut to each video's length)")
+        grid = QGridLayout(group)
+        grid.setSpacing(12)
+        grid.setColumnMinimumWidth(0, 205)
+        grid.setColumnMinimumWidth(2, 145)
+        grid.setColumnStretch(1, 1)
+        grid.setColumnStretch(3, 1)
+
+        self._music_enable = QCheckBox("Add background music to every video")
+        grid.addWidget(self._music_enable, 0, 0, 1, 4)
+
+        grid.addWidget(QLabel("Music folder:"), 1, 0)
+        self._music_folder_edit = QLineEdit()
+        self._music_folder_edit.setPlaceholderText(
+            "Folder with your mp3 / wav / m4a files"
+        )
+        self._music_folder_edit.editingFinished.connect(self._refresh_music_list)
+        grid.addWidget(self._music_folder_edit, 1, 1, 1, 2)
+        browse_button = QPushButton("Browse...")
+        browse_button.clicked.connect(self._browse_music_folder)
+        browse_button.setFixedHeight(36)
+        browse_button.setMaximumWidth(150)
+        grid.addWidget(
+            browse_button,
+            1,
+            3,
+            alignment=Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+        )
+
+        self._music_count_label = QLabel("No music loaded")
+        grid.addWidget(self._music_count_label, 2, 0, 1, 3)
+        add_button = QPushButton("Add files...")
+        add_button.clicked.connect(self._add_music_files)
+        add_button.setFixedHeight(36)
+        add_button.setMaximumWidth(150)
+        grid.addWidget(
+            add_button,
+            2,
+            3,
+            alignment=Qt.AlignmentFlag.AlignRight | Qt.AlignmentFlag.AlignVCenter,
+        )
+
+        self._music_list = QListWidget()
+        self._music_list.setFixedHeight(100)
+        grid.addWidget(self._music_list, 3, 0, 1, 4)
+
+        grid.addWidget(QLabel("Pick track:"), 4, 0)
+        self._music_selection = QComboBox()
+        self._music_selection.addItem("Shuffle (no repeats until all used)", "shuffle")
+        self._music_selection.addItem("Random", "random")
+        self._music_selection.addItem("In order (A-Z)", "sequential")
+        grid.addWidget(self._music_selection, 4, 1)
+
+        grid.addWidget(QLabel("Original audio:"), 4, 2)
+        self._music_mode = QComboBox()
+        self._music_mode.addItem("Replace (silent AI reels)", "replace")
+        self._music_mode.addItem("Mix with original sound", "mix")
+        self._music_mode.setCurrentIndex(1)
+        grid.addWidget(self._music_mode, 4, 3)
+
+        grid.addWidget(QLabel("Background music volume:"), 5, 0)
+        self._music_volume = QSlider(Qt.Orientation.Horizontal)
+        self._music_volume.setRange(0, 100)
+        self._music_volume.setValue(50)
+        self._music_volume_label = QLabel("50%")
+        self._music_volume.valueChanged.connect(
+            lambda value: self._music_volume_label.setText(f"{value}%")
+        )
+        grid.addWidget(self._music_volume, 5, 1, 1, 2)
+        grid.addWidget(self._music_volume_label, 5, 3)
+
+        grid.addWidget(QLabel("Original video audio volume:"), 6, 0)
+        self._music_original_volume = QSlider(Qt.Orientation.Horizontal)
+        self._music_original_volume.setRange(0, 100)
+        self._music_original_volume.setValue(50)
+        self._music_original_volume_label = QLabel("50%")
+        self._music_original_volume.valueChanged.connect(
+            lambda value: self._music_original_volume_label.setText(f"{value}%")
+        )
+        grid.addWidget(self._music_original_volume, 6, 1, 1, 2)
+        grid.addWidget(self._music_original_volume_label, 6, 3)
+
+        grid.addWidget(QLabel("Fade in (sec):"), 7, 0)
+        self._music_fade_in = QDoubleSpinBox()
+        self._music_fade_in.setRange(0.0, 5.0)
+        self._music_fade_in.setSingleStep(0.25)
+        self._music_fade_in.setValue(0.5)
+        grid.addWidget(self._music_fade_in, 7, 1)
+
+        grid.addWidget(QLabel("Fade out (sec):"), 7, 2)
+        self._music_fade_out = QDoubleSpinBox()
+        self._music_fade_out.setRange(0.0, 5.0)
+        self._music_fade_out.setSingleStep(0.25)
+        self._music_fade_out.setValue(1.5)
+        grid.addWidget(self._music_fade_out, 7, 3)
+
+        self._music_random_start = QCheckBox(
+            "Start from a random point in longer songs"
+        )
+        grid.addWidget(self._music_random_start, 8, 0, 1, 4)
+        layout.addWidget(group)
+
+        info = QFrame()
+        info.setObjectName("card")
+        info_layout = QVBoxLayout(info)
+        title = QLabel("How the auto-cut works")
+        title.setObjectName("subheading")
+        info_layout.addWidget(title)
+        description = QLabel(
+            "- Longer songs are cut to the video length with a fade-out.\n"
+            "- Shorter songs are looped until the video ends.\n"
+            "- Supported: "
+            + ", ".join(sorted(extension.lstrip(".") for extension in MUSIC_EXTENSIONS))
+        )
+        description.setWordWrap(True)
+        info_layout.addWidget(description)
+        layout.addWidget(info)
+
+        sources_group = QGroupBox(
+            "Free copyright-safe music sources (download, then add the folder above)"
+        )
+        sources_layout = QHBoxLayout(sources_group)
+        for label, url in self.MUSIC_SOURCES:
+            button = QPushButton(label)
+            button.clicked.connect(lambda _=False, source_url=url: self._open_url(source_url))
+            sources_layout.addWidget(button)
+        layout.addWidget(sources_group)
+
+        note = QLabel(
+            "Always check each track's license. Popular commercial songs can still "
+            "get copyright claims even after trimming."
+        )
+        note.setWordWrap(True)
+        layout.addWidget(note)
+
+        self._music_extra_files: List[str] = []
+        layout.addStretch()
+        scroll_area.setWidget(content)
+        tab_layout.addWidget(scroll_area)
+        return tab
+
+    def _open_url(self, url: str) -> None:
+        from PySide6.QtCore import QUrl
+        from PySide6.QtGui import QDesktopServices
+
+        QDesktopServices.openUrl(QUrl(url))
+
+    def _browse_music_folder(self) -> None:
+        folder = QFileDialog.getExistingDirectory(self, "Select music folder")
+        if folder:
+            self._music_folder_edit.setText(folder)
+            self._refresh_music_list()
+
+    def _add_music_files(self) -> None:
+        from ..audio.music_library import MUSIC_EXTENSIONS
+
+        pattern = " ".join(f"*{extension}" for extension in sorted(MUSIC_EXTENSIONS))
+        files, _ = QFileDialog.getOpenFileNames(
+            self, "Select music files", "", f"Audio ({pattern})"
+        )
+        for path in files:
+            if path not in self._music_extra_files:
+                self._music_extra_files.append(path)
+        if files:
+            self._refresh_music_list()
+
+    def _current_music_tracks(self) -> List[str]:
+        from ..audio.music_library import scan_music_folder
+
+        tracks = scan_music_folder(self._music_folder_edit.text().strip())
+        for path in self._music_extra_files:
+            if os.path.isfile(path) and path not in tracks:
+                tracks.append(path)
+        return tracks
+
+    def _refresh_music_list(self) -> None:
+        tracks = self._current_music_tracks()
+        self._music_list.clear()
+        for path in tracks:
+            self._music_list.addItem(os.path.basename(path))
+        self._music_count_label.setText(
+            f"{len(tracks)} track(s) loaded" if tracks else "No music loaded"
+        )
 
     def _build_export_tab(self) -> QWidget:
         tab = QWidget()
@@ -2311,6 +2514,18 @@ class MainWindow(QMainWindow):
             "duplicate_prevention": self._dup_prevent_check.isChecked(),
             "min_effects_vary": self._min_effects_vary_spin.value(),
         }
+        config.setdefault("audio", {})["background_music"] = {
+            "enabled": self._music_enable.isChecked(),
+            "folder": self._music_folder_edit.text().strip(),
+            "files": self._current_music_tracks(),
+            "selection": self._music_selection.currentData(),
+            "mode": self._music_mode.currentData(),
+            "volume": self._music_volume.value() / 100.0,
+            "original_volume": self._music_original_volume.value() / 100.0,
+            "fade_in": self._music_fade_in.value(),
+            "fade_out": self._music_fade_out.value(),
+            "random_start": self._music_random_start.isChecked(),
+        }
         encoder = self._export_encoder.currentData()
         if encoder == "auto":
             encoder = "libx264"
@@ -2359,6 +2574,15 @@ class MainWindow(QMainWindow):
                 self,
                 "Watermark Settings",
                 error or "Please resolve the watermark settings before processing.",
+            )
+            return
+
+        if self._music_enable.isChecked() and not self._current_music_tracks():
+            QMessageBox.warning(
+                self,
+                "Background Music",
+                "Background music is enabled but no music files were found.\n\n"
+                "Choose a music folder or add files in the Music tab, or turn music off.",
             )
             return
 
@@ -2422,7 +2646,7 @@ class MainWindow(QMainWindow):
         self._batch_processor.start(
             self._source_files, output_dir, config, prefix, suffix
         )
-        self._tabs.setCurrentIndex(4)
+        self._tabs.setCurrentIndex(5)
 
     def _pause_processing(self) -> None:
         if self._batch_processor.state == BatchProcessor.STATE_RUNNING:
